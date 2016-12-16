@@ -49,6 +49,12 @@
 		body{
 			font-family: arial,helvetica;
 			color: #F2F2F2;
+			background-image:url("../img/wallpaper.jpg"); 
+			background-attachment: fixed;
+			background-size: cover;
+
+
+
 		}
 		h1{
 			font-size: 6em;
@@ -56,6 +62,28 @@
 		p{
 			font-size: 2em;
 		}
+
+		figcaption{
+			display: flex;
+			justify-content: center;
+			margin-left: 25%;
+			margin-top: 2%;
+			color: black;
+			background-color: whitesmoke;
+			width: 50%;
+			font-size: 2.5em;
+
+
+		}
+
+		.title{
+			margin-top: 50%!important ;
+			color: grey;
+			
+
+
+		}
+
 		.content{
 
 			position: relative;
@@ -75,7 +103,7 @@
 		}
 		#section0 p{
 			color: #333;
-			opacity: 0.4;
+			
 		}
 
 
@@ -146,8 +174,8 @@ div.p{
 	border :2px solid red;
 	color: red;
 	background-color: whitesmoke;
-	margin-bottom: 5%;
-	width: 10%;
+	/*margin-bottom: 5%;*/
+	width: 30%;
 
 }
 
@@ -159,7 +187,6 @@ div.p{
 h1.titre{
 	display:flex;
 	justify-content: center;
-	
 	background-color: whitesmoke;
 
 
@@ -192,6 +219,7 @@ h2{
 .login{
 	display: flex!important;
 	justify-content: center!important;	
+	margin-top: 5%;
 	
 	
 
@@ -427,12 +455,16 @@ h2{
 }
 
 .border{
+	display: flex;
+	justify-content: center;
 	text-align: center;
 	border: 2px solid black;
 	background-color: whitesmoke ;
+	margin-left: 25%;
 	margin-top: 5%;
 	margin-bottom: 5%;
 	font-size: 50px;
+	width: 50%;
 
 }
 

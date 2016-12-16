@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>2tech</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage plugin by Alvaro Trigo. Pure javascript version of full screen slider." />
+	<meta name="keywords"  content="fullpage,jquery,alvaro,trigo,plugin,fullscren,screen,full,iphone5,apple,pure,javascript,slider,hijacking" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="javascript.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="../css/css/prez.css">
+
+	<style>
+		
+	</style>
+</head>
+<body>
+
+
+<div id="fullpage">
+	<div class="section " id="section0">
+		<div class="content">
+		<div class="titre">
+			<h1>2tech</h1>
+			</div>
+				<center>
+				<div class="p">
+					<p>pannel de gestion</p>
+				</div>	
+				</center>
+
+					<div class="logo">
+						<img src="../img/2tech.jpg"/>					
+					</div>
+		</div>
+	</div>
+		
+		<div class="section " id="section1">
+			<div class="content">
+				<div class="titre">
+			<h2 class="border">le login</h2>
+			</div>
+				<center>
+				<div class="p">
+					<p >access au pannel </p>
+				</div>	
+				</center>
+
+					<div class="login">
+						<img src="../img/login.png"/>					
+					</div>
+		</div>
+	</div>
+
+
+<!--section 2 width slide 1 to 6-->
+<!--slide 1-->
+	<div class="section" id="section2">
+		<div class="slide" id="slide1">
+			 <div class="content">
+				 	 <h2 class="border">Une section pour l'ajout de nouvelle pieces </h2>
+					 	 <div class="add"></div>
+				 	 
+				 	
+				</div>
+		</div>
+<!--slide 2-->		
+		<div class="slide" id="slide2">
+			<div class="content">
+				 <h2 class="border">La section de modification</h2>
+				 		<div class="sel">
+						 	  	 	<div class="select"></div>
+						 	 </div>	   
+			</div>
+		</div>
+<!--slide 3-->		
+		<div class="slide" id="slide3">
+			<div class="content">
+				 <h2 class="border">la selection du composant via un bouton radio </h2>
+						<div class="sels">
+							<div class="selection"></div>
+
+						</div>
+			</div>
+		</div>
+<!--slide 4-->		
+		<div class="slide" id="slide4">
+			<div class="content">
+				 <h3 class="border">l'edition du composants</h3>
+
+						 	 <div class="modif">
+						 	  	 	<div class="modifs"></div>
+						 	 </div>	   
+			</div>
+		</div>
+		
+<!--slide 5-->
+		<div class="slide" id="slide5">
+			<div class="content">
+				 <h2 class="border">Les images et les quantitées</h2>
+						<div class="number">
+							<div class="numbers"></div>
+
+						</div>
+			</div>
+		</div>
+<!--slide 6-->
+		<div class="slide" id="slide6">
+			<div class="content">
+				 <h2 class="border">Les emplacements </h2>
+						<div class="place">
+							<div class="area"></div>
+
+						</div>
+			</div>
+		</div>
+	</div>
+	<!--section 3-->
+	<div class="section" id="section3">
+			<div class="content">
+				 <h2 class="border">Deux autres pages annexes accessibles via la barre de navigation </h2>
+						<div class="nav">
+							<div class="navbar"></div>
+
+						</div>
+			</div>
+	</div>
+	<!--section 4-->		
+	<div class="section" id="section4">
+		<div class="content">
+			
+		<h2 class="border">Deux pages conçue pour afficher une vue d'ensemble avec des statistiques</h3> 	 
+
+				<div class="stat">
+						<div class="stats"></div>		
+				</div>
+		</div>
+	</div>
+	<!--section 5-->
+	<div class="section" id="section5">
+			<div class="slide" id="slide1">
+			 <div class="content">
+				 	 
+				<h3 class="border">La modal d'ajout d'utilisateurs/fournisseurs</h3> 	 
+
+				<div class="modal">
+						<div class="modals"></div>		
+				</div>
+				 	 
+				 	
+				</div>
+		</div>
+<!--slide 2-->		
+	<div class="slide" id="slide2">
+			<div class="content">
+				 	<h3 class="border">fulltabs</h3> 	 
+
+				<div class="fulltab">
+						<div class="fulltabs"></div>		
+			</div>
+		</div>
+
+	</div>
+
+	<!--slide 3-->		
+	<div class="slide" id="slide3">
+			<div class="content">
+				 	<h3>planning</h3> 	 
+
+				<div class="plannings">
+						<!--<a href="../planning.html"><div class="planning" ></div></a>-->
+						<iframe src="../planning.html" width="900" height="400"></iframe>
+				</div>
+		</div>
+
+	</div>
+
+
+
+
+	</div>
+	
+</div>
+
+
+
+
+<script type="text/javascript" src="javascript.fullPage.js"></script>
+<script type="text/javascript">
+	fullpage.initialize('#fullpage', {
+		anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+		menu: '#menu',
+		css3:true
+	});
+
+</script>
+
+</body>
+</html>

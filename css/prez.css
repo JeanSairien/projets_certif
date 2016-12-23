@@ -1,3 +1,4 @@
+
 /* Reset CSS
 		 * --------------------------------------- */
 		body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
@@ -297,12 +298,9 @@ h2{
 .modif{
 	display: block;
 	justify-content: center!important;
-<<<<<<< HEAD
 	width: 30%;
 	margin-left: 20%;
 	padding-bottom: 50%!important;
-=======
-	width: 25%;
 	
 	
 
@@ -315,16 +313,10 @@ h2{
 	/*background:url('../img/oldnew.png');*/	
 	background-repeat: no-repeat;
 	background-size: cover;
-<<<<<<< HEAD
-	padding: 0 auto;
-	
-	height: 700px;
-=======
 	transform: translate(15%, -50%)!important;
 	padding: 0 ;
 	
 	height: 650px;
->>>>>>> d0dfc4127f717e0ff62976db85048bc62402b703
 	width: 1024px;
 
 }

@@ -277,6 +277,7 @@ h2{
 	justify-content: center!important;
 	width: 30%;
 	margin-left: 20%;
+	padding-bottom: 50%!important;
 	
 
 
@@ -291,7 +292,6 @@ h2{
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 0 auto;
-	
 	
 	height: 700px;
 	width: 1024px;

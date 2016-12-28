@@ -57,7 +57,7 @@ _Auteur : **Matthieu B, Jonathan P, Julien V**_
 
 _Destinataire : **Francois LE HIREZ**_  
 					
-_Version : **1.1**_ 
+ 
 				
 	
 ##3° fonctions de l'application## 

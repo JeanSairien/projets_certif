@@ -150,7 +150,9 @@ _Version : **1.1**_
 * Un logo fournit par le clients 		
 
 ---
-##5° retour attendue :
+
+###5° retour attendue :
+
 ---
 
 * Les échanges seront a interval regulier, sans date definit et dans un temps de reponse impartit d'une semaine

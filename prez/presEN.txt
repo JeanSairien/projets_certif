@@ -1,0 +1,112 @@
+ http://raspberrypi.local/
+
+
+    variable keyirc "LfV066nVb47PATd"
+
+
+
+
+
+some sentences to add at  presentation text
+
+
+thank you for your attention
+
+
+ABSTRACT
+
+
+intro:
+(Good morning/afternoon, I am Julien, I would like to present and explain to you our project), this application is a useful panel to manage electronic components in an industrial repairing entrepise.
+
+Its name is 2tech, it’s an enterprise located in the south of Brittany.
+
+
+(Firstly, a quick history of the coworkers who worked on this project:)
+
+The owner of the project initially enstrusted the project to Wanalike Network and further on
+(for the present test) we worked on the project at the Code Academie school.
+Wanalike Network is a little social network but it’s also a platform that allows us to meet people and to exchange knowledge and experiences.
+With Matthieu Bernolin, my friend and partner at Wanalike, we did a lot of work on the panel for many weeks and a first version was born.
+And today it's a developed version built by Jonathan Platon and me.
+
+
+(Secondly, a few characteristics of the panel:)
+
+
+To access the panel two rights are avalaible.
+
+An administrator can make updates or delete users while a simple user can just use the panel.
+
+like add product or supplier
+
+The panel can contain 10000(ten thousand) products in its database and ten staff members can use the panel at the same time.
+
+
+(Finally a technical aspect:)
+
+We created a new design, we upgraded the programme and we integrated the popular framework angular.js.
+For this newest version, we used bootstrap for the css, php7 for the back-office in font scratch mode.
+For the database we used mysql with phpmyadmin and apache for the web server.
+
+
+Thank you for your attention. 
+
+
+		
+				
+
+
+
+
+présentation en français 
+ résumé du cachier des charges en français par julien vaupré 
+
+ --- intro ---
+ L'application présenté est un panel de gestion de stock conçue pour des produits electronique dans le millieu industriel.
+
+Cette application a été ordonné par l'entreprise 2tech , une entreprise du sud de la bretagne.
+Le client as initialement confier le projet a wanalike network et nous avons repris le projet dans le cadre de la certification de développeur logiciel a la code academie avec Jonathan Platon.
+
+ ---histoire rapide des collaborateurs ayant travailler sur le projet ---
+
+la code academie est une ecole pour apprendre la programmation dans un environnement web.
+Wanalike est un petit réseau social mais aussi une plateforme de rencontre et d'echanges d'experiences et de connaissances
+
+ c'est avec Matthieu Bernolins, mon amis et partenaire a wanalike que nous avons travailler plusieurs semaine durant pour voir naitre la premiere version du projet 
+ Et c'est aujourdhui qu'une nouvelle version developper par Jonathan Platon et moi meme voir le jour.
+
+
+ ---Quelques caracteristiques  du panel ---
+
+ Deux type d'access au panel sont possible adminstrateur et utilistateurs.
+ l'administrateur peux gerer les utilisateurs tels que les ajouter, les modifiers ou les supprimer alors qu'un simple utilisateurs ne peux que simplement utiliser le panel et gerer les articles ou les fournisseurs tels que l'ajout la modification ou la suppression de ceux ci.
+
+ la base de données du panel ne peut contenir que 10000 articles au maximum et peu etre utiliser par dix utilisateurs simultanément.
+
+ --- l'aspect techniques ---
+
+ Pour cette nouvelle version, nous avons crée un nouveau designe, un programme optimisé et nous avons également integré le populair framework Angular.js
+ Bootstrap a aussi été utiliser pour le css , nous avons choisit la version 7 de php pour le back-office en font scratch.
+ Pour la base de données, nous avons opter pour mysql avec phpmyadmin ainsi que apache pour le serveur web  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 

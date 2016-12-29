@@ -1,25 +1,66 @@
 trame de présentation pour certification de developpeur logiciel 
 
-
-
-
 1° ----- resumé en anglais -----
 
 5 minutes max
 
-2° ----- présentation de l'entreprise -----
+Présentation Du projet,des ressource humaines et de l'entreprises
 
-5 minutes 
+ 	
 
-3° ----- context du projet -----
+- Développer une application client-serveur
 
-(cahier des charges)
+	Maquetter une application
 
-(environnement technique et humain)
+	Concevoir une base de données
 
-préstataires 
+	Mettre en place une base de données
 
-5 minutes
+	Développer des composants d'accès aux données
+
+
+
+- Développer une application web
+	
+	Développer des pages web en lien avec une base de données
+
+	Mettre en œuvre une solution de gestion de contenu ou e-commerce
+
+
+
+
+- Développer une interface utilisateur
+
+- Développer des pages web en lien avec une base de données
+  
+- Mettre en œuvre une solution de gestion de contenu ou d’e-commerce
+ 
+	Cahier des charges ou expression des besoins de l'application à Développer
+
+
+- Spécifications fonctionnelles
+
+- Spécifications techniques
+
+- Réalisation
+
+
+Le candidat commence sa présentation au jury par un résumé en anglais de son projet. Il présente ensuite son projet à l’aide d’un support de présentation réalisé en amont de l’épreuve, et selon ce canevas :
+- Présentation de l’entreprise et/ou du service
+- Contexte du projet (cahier des charges, environnement humain et technique)
+- Analyse
+- Conception et codage
+- Présentation des éléments les plus significatifs de l’interface de l’application
+- Synthèse et conclusion
+
+
+
+
+
+
+
+
+
 
 
 

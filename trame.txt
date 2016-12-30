@@ -4,19 +4,35 @@ trame de présentation pour certification de developpeur logiciel
 
 5 minutes max
 
+Rapide presentation du projet 
 Présentation Du projet,des ressource humaines et de l'entreprises
+
+code academie est une ecole de programmation en environement web 
+geré et organiser par la fondation face qui a repondue a l'appel a projet de la grand ecole du numerique 
 
  	
 
 - Développer une application client-serveur
-
+--- Nous avons developper l'application a l'aide d'un serveur web apache[num 		version] le langagues php dans sa version 7 ,est utiliser pour la manipulation des données ---
+	
 	Maquetter une application
+	logiciel utiliser et version ()
 
 	Concevoir une base de données
 
+	mysql version ? 
+
 	Mettre en place une base de données
+	articles :
+
+	fournisseurs :
+
+	utilisateurs :
 
 	Développer des composants d'accès aux données
+
+	une modal avec un formulaire d'ajout gerer par des appel ajax coté front 
+	et les fonctionnalité d'ajout en php avec leur requettes sql associé 
 
 
 

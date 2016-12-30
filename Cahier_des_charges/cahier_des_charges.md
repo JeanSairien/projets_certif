@@ -1,10 +1,15 @@
 
 	
+TODO :  support screen navigateur os 
+TODO : version mysql Angular js  
+
+
+
 # Cahier des charges # 
 	
 ## _Présentation des ressources_ ##
 
-##1° L'agence  et ces contributeurs ## 
+##1° L'agence  et ses contributeurs ## 
 
 ----
 
@@ -30,7 +35,7 @@ _Un développeur back-end :  **Julien  Vaupré**_
  
 * L'entité est basée a Sainte-Trephine pour ces serveurs et a Loudeac pour les locaux de developpement.   
 			
-* Wanalike network est composé d'un staff de 6 developpeur ainsi qu'une multitude d'utilisateurs qui on rejoint la communauté.
+* Wanalike network est composé d'un staff de 6 developpeur ainsi qu'une centaine d'utilisateurs qui on rejoint la communauté.
 
 * Au sein de l'entité wanalike network, en charge initial du projet, voici les deux developpeur a qui le projet a été confier:  
 
@@ -38,16 +43,16 @@ _Un developpeur full-stack: **julien vaupré**_
 
 _Un developpeur  back-end: **matthieu bernolin**_ 
 			
-* Wanalike assurera la continuitée du developpement et de la mise en production ,ainsi que la garantie post dev de deux mois et les éventuels évolutions possibles du projet apres une periode de 6 mois de production.									
+* Wanalike sera chargé de fournir un support d'utilisation et de maintenances pendant deux mois apres la mise en production . 
+Une nouvelle etude de besoin en vue d'evolution du projet pourra etre mener apres 6 mois de production via un avenant envoyer au minimum 2 semaine au préalable.									
 
 
-##2° Descriptif du projet## 
+##2° Déscriptif du projet## 
 
 ---
 
-###2.1 Presentation du clients### 
+###2.1 Présentation du clients### 
 
-###Informations sur le client###
 
 _Nom : Société **2TECH**_ 
 
@@ -96,6 +101,7 @@ _Destinataire : **Francois LE HIREZ**_
 		
 ####4.1.1 les choix de l'equipe 
 
+* le html5 et le css3 ainsi que le framwork Angular js 2 seront utiliser pour le projet .
 
 * Pour une meilleurs compatibilté, les developpeurs on choisit la version 7 de php ainsi que mysql pour la base de données 	
 

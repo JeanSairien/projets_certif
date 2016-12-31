@@ -15,21 +15,21 @@ geré et organiser par la fondation face qui a repondue a l'appel a projet de la
 - Développer une application client-serveur
 --- Nous avons developper l'application a l'aide d'un serveur web apache[num 		version] le langagues php dans sa version 7 ,est utiliser pour la manipulation des données ---
 	
-	Maquetter une application
+	-Maquetter une application
 	logiciel utiliser et version ()
 
-	Concevoir une base de données
+	-Concevoir une base de données
 
 	mysql version ? 
 
-	Mettre en place une base de données
-	articles :
+	-Mettre en place une base de données
+		articles :
 
-	fournisseurs :
+		fournisseurs :
 
-	utilisateurs :
+		utilisateurs :
 
-	Développer des composants d'accès aux données
+	-Développer des composants d'accès aux données
 
 	une modal avec un formulaire d'ajout gerer par des appel ajax coté front 
 	et les fonctionnalité d'ajout en php avec leur requettes sql associé 

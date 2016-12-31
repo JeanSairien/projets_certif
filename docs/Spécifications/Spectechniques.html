@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>Spécification technique</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<!--TODO mettre le code de chaques appels ajax-->	
+<!-- mettre dans les fichier css le code de style ci-dessou-->
+<style>
+	
+table, tr, td{
+
+	border: 1px solid;
+	text-align: center;
+	padding: 1;
+
+
+}
+
+.add{
+
+	height: 50%;
+	width: 100%;
+
+
+
+}
+
+.read{
+
+	height: 50%;
+	width: 100%;
+}
+
+.update{
+
+	height: 50%;
+	width: 100%;
+
+}
+
+.delete{
+
+	height: 50%;
+	width: 100%;
+
+
+}
+
+
+
+.code{
+	width: 30%;
+	border: 1px solid ;
+	text-align: center;
+}
+
+.code1{
+	width: 16%;
+	border: 1px solid ;
+	text-align: center;
+}
+
+
+.code2{
+	width: 100%;
+	border: 1px solid ;
+	text-align: center;
+}
+
+
+</style>
+<body>
+
+	<article>
+		<h1> Spécifications techniques</h1>
+
+		<h2>1. Contexte </h2>
+
+			<p>L'application est développée avec angular js 2 qui est un framework MVC / MVVM côté client, développée en Javascript pour sa partie Front-End,  PHP 7 qui est un language coté serveur pour sa partie Back-End et enfin avec une base de donnée type MySQL.</p>
+
+		<hr>
+
+		<h2>2. Description générale</h2>
+
+			<h3>2.1 <em>Arborescence</em></h3>
+
+			<div class="logo">
+				<img src="img/arborescence.png">
+			</div>
+
+			<h3>2.2. <em>Rubriquage et workflow</em> <span>Tec 1.0 voir Req 1.0</span></h3>
+			<p>Table des correspondances fonctionnels et techniques</p>
+			<center>
+			<table class="table-bordered">
+			    <thead>
+			      <tr>
+			        <th>Req</th>
+			        <th>Fonctions</th>
+			        <th>Tec</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <td> 1.1</td>
+			        <td>Ajouter un article</td>
+			        <td> 1.1</td>
+			      </tr>
+			      <tr>
+			        <td>1.2</td>
+			        <td>Sélectionner un article</td>
+			        <td>1.2</td>
+			      </tr>
+			      <tr>
+			        <td>1.3</td>
+			        <td>Modifier un article</td>
+			        <td>1.3</td>
+			      </tr>
+			       <tr>
+			        <td>1.4</td>
+			        <td>Supprimer un article</td>
+			        <td>1.4</td>
+			      </tr>
+			      <tr>
+			        <td>2.1</td>
+			        <td>Ajouter un fournisseur</td>
+			        <td>2.1</td>
+			      </tr>
+			      <tr>
+			        <td>2.2</td>
+			        <td>Sélectionner un fournisseur</td>
+			        <td>2.2</td>
+			      </tr>
+			      <tr>
+			        <td>2.3</td>
+			        <td>Modifier un fournisseur</td>
+			        <td>2.3</td>
+			      </tr>
+			      <tr>
+			        <td>2.4</td>
+			        <td>Supprimer un fournisseur</td>
+			        <td>2.4</td>
+			      </tr>
+			      <tr>
+			        <td>3.1</td>
+			        <td>Ajouter un utilisateur</td>
+			        <td>3.1</td>
+			      </tr>
+			      <tr>
+			        <td>3.2</td>
+			        <td>Modifier un utilisateur</td>
+			        <td>3.2</td>
+			      </tr>
+			      <tr>
+			        <td>3.3</td>
+			        <td>Supprimer un utilisateur</td>
+			        <td>3.3</td>
+			      </tr>
+			      <tr>
+			        <td>3.4</td>
+			        <td>Se connecter</td>
+			        <td>3.4</td>
+			      </tr>
+			      <tr>
+			        <td>3.4</td>
+			        <td>Se reconnecter</td>
+			        <td>3.5</td>
+			      </tr>
+			      <tr>
+			        <td>3.5</td>
+			        <td>Se deconnecter</td>
+			        <td>3.6</td>
+			      </tr>
+
+
+			    </tbody>
+			  </table>
+			</center>
+
+			<div class="logo size">
+				<p>Les sections au format HTML sont appelées dans une directive définie par le paramètre "templateUrl" . L’intérêt de cette technique est que le fichier HTML va être mis en cache par le navigateur.</p>
+				
+			</div>
+		<hr>
+
+		<h2>3. Fonctions de service</h2> 
+
+			<h3>3.1 <em> Ajouter un article</em> <span>Tec 1.1 voir Req 1.1</span></h3>
+
+			<p>La fonctionnalité d'ajout s'effectue via un CRUD implementé pour le projet, par la fonction <div class="code1">add_article()"</div> qui est déclanché par l'appel ajax suivant <div class="code1">"$http.post()"</div> </p>
+			<p>Une fois la fonction déclanchée, la commande SQL suivante est alors exécutée :</p>
+			<div class="code2">"INSERT INTO article (articles, description, reference, fournisseurs, date, stock) VALUES ('".$articles."', '".$description."', '".$reference."', '".$fournisseurs."', '".$date."', '".$stock."' )"</div>				
+			<p> Le contenu est alors ajouté dans la base de données en reçevant un ID généré automatiquement, qui est de type <em>"integer"</em>.</p>
+			  
+			<p> Les champs contenus dans la table <strong>article</strong> peuvent être remplit dans la base de données tel que : </p>
+
+				<table class="table-bordered">
+			    <thead>
+			      <tr>
+			        <th>Champs</th>
+			        <th>Type</th>
+			        <th>Usage</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <td>"Articles"</td>
+			        <td>varchar(255)</td>
+			        <td>Le champ définit le nom de l'article et est obligatoire</td>
+			      </tr>
+			      <tr>
+			        <td>"Description"</td>
+			        <td>varchar(255)</td>
+			        <td>Permet d'entrer une description de l'article</td>
+			      </tr>
+			      <tr>
+			        <td>"Référence"</td>
+			        <td>varchar(255)</td>
+			        <td>La référence du produit doit être saisie pour être ajoutée à la base de données</td>
+			      </tr>
+			       <tr>
+			        <td>"Fournisseurs"</td>
+			        <td>varchar(255)</td>
+			        <td> Permet d'entrer le nom du fournisseur pour indiquer la provenance de l'article</td>
+			      </tr>
+			      <tr>
+			        <td>"Date"</td>
+			        <td>datetime</td>
+			        <td>Permet de spécifier la date d'entrée via un datepicker (calendrier jquery)</td>
+			      </tr>
+			      <tr>
+			        <td>"Stock"</td>
+			        <td>varchar(255)</td>
+			        <td>Permet de spécifier une quantité à l'article en entrée, ce champs doit obligatoirement être saisi</td>
+			      </tr>
+			    </tbody>
+			  </table>
+
+
+			
+
+		<h3>3.2 <em> Sélectionner un article</em> <span>Tec 1.2 voir Req 1.2</span></h3>
+				
+
+				<p>Lorsque <strong>l'utilisateur</strong> effectue une recherche via le champs prévu à cet effet,</p>  
+				<div class="code"><code>&lt;input type="radio"&gt;</code></div> 
+				<p> l'appel ajax suivant:<div class="code1">"$http.get()"</div> est alors effectué pour appeler la fonction </p>
+				<div class="code1">"get_articles()"</div> 
+				<p>qui executera la commandes sql suivante :</p>
+				<div class="code">'SELECT * FROM article'</div>
+				
+				<p>qui selectionne les champs correspondants dans la base de données :</p>
+
+
+			
+<table class="table-bordered">
+			    <thead>
+			      <tr>
+			        <th>Champs</th>
+			        <th>Type</th>
+			        <th>Usage</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <td>"Articles"</td>
+			        <td>varchar(255)</td>
+			        <td>Le champ définit le nom de l'article et est obligatoire</td>
+			      </tr>
+			      <tr>
+			        <td>"Description"</td>
+			        <td>varchar(255)</td>
+			        <td>Permet d'entrer une description de l'article</td>
+			      </tr>
+			      <tr>
+			        <td>"Référence"</td>
+			        <td>varchar(255)</td>
+			        <td>La référence du produit doit être saisie pour être ajoutée à la base de données</td>
+			      </tr>
+			       <tr>
+			        <td>"Fournisseurs"</td>
+			        <td>varchar(255)</td>
+			        <td> Permet d'entrer le nom du fournisseur pour indiquer la provenance de l'article</td>
+			      </tr>
+			      <tr>
+			        <td>"Date"</td>
+			        <td>datetime</td>
+			        <td>Permet de spécifier la date d'entrée via un datepicker (calendrier jquery)</td>
+			      </tr>
+			      <tr>
+			        <td>"Stock"</td>
+			        <td>varchar(255)</td>
+			        <td>Permet de spécifier une quantité à l'article en entrée, ce champs doit obligatoirement être saisi</td>
+			      </tr>
+			    </tbody>
+			  </table>
+			
+			
+
+		<h3>3.3 <em> Modifier un article tec 1.3 voir req 1.3</em></h3>
+
+				<p><strong>L'utilisateur</strong> aura la possibilité de modifier un article dans la base de données en cliquant sur l'icône <img src="img/pencil.png"> via le tableau,</p>
+
+
+				<p>l'appel ajax </p><div class="code1">"$http.post()"</div><p> est alors effectué pour appeler la fonction</p> 
+				<p><div class="code">"update_article()"</div></p>
+
+				<div class="code">'SELECT * FROM article WHERE id = :id'</div>
+				<p>qui sélectionne les champs correspondants dans la base de données.</p>
+
+				<p>puis la fonction</p>
+				<div class="code2">'UPDATE article SET articles =:articles , description= :description, reference = :reference, fournisseurs =:fournisseurs, date = :date, stock = :stock  WHERE id = :id'</div>	
+				<img class="add" src="img/update.png">
+				<p>qui modifie les champs correspondants dans la base de données.</p>
+			
+
+		<h3>3.4 <em>Supprimer un article Tec 1.4 voir Req 1.4</em></h3>
+
+				<p><strong>L'utilistateur</strong> aura la possibilité de supprimer un article dans la base de données en cliquant sur l'icône <img src="img/cross.png"> via le tableau.</p>
+
+				<p> L'appel ajax suivant <div class="code1">"$http.get()"</div> déclanchera la fonction suivante: </p>	
+				<div class="code">"delete_article()"</div>
+
+				<p>La commande SQL suivante sera alors executée:</p>
+				<div class="code">"DELETE FROM article WHERE id =$id"</div>
+
+				<img class="add" src="img/delete.png">	
+				<p>Une modal de confirmation s'ouvrira :
+				</p>
+					<!--#todo mettre le code de la confirmation de suppression-->
+			
+------FIN ARTICLE-------
+
+			<h3>3.5 <em> Ajouter un fournisseur</em> <span>Tec 2.1 voir Req 2.1</span></h3>
+
+			<p>La fonctionnalité d'ajout s'effectue via un CRUD, par la fonction <div class="code">add_fournisseur()"</div> qui est déclanchée par l'appel ajax suivant :<div class="code	">"$http.post()"</div> </p>
+			<p>Une fois la fonction déclanchée, la commande SQL suivante est alors exécutée :</p>
+			<div class="code2">"INSERT INTO fournisseurs (name, localisation, reference, date) VALUES ('".$name."', '".$localisation."', '".$reference."', '".$date."' )"</div>				
+			<p> Le contenu est alors ajouté dans la base de données en reçevant un ID généré automatiquement, qui est de type <em>"integer"</em>.</p>
+			<p> Les champs contenus dans la table <strong>fournisseurs</strong> peuvent être remplit dans la base de données tel que : </p>
+
+
+			<table class="table-bordered">
+			    <thead>
+			      <tr>
+			        <th>Champs</th>
+			        <th>Type</th>
+			        <th>Usage</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <td>"Name"</td>
+			        <td>varchar(255)</td>
+			        <td>Le champ définit le nom du fournisseur et est obligatoire</td>
+			      </tr>
+			      <tr>
+			        <td>"Localisation"</td>
+			        <td>varchar(255)</td>
+			        <td>Permet d'entrer une localisation du fournisseur</td>
+			      </tr>
+			      <tr>
+			        <td>"Référence"</td>
+			        <td>varchar(255)</td>
+			        <td>La référence du fournisseur doit être saisie pour être ajoutée à la base de données</td>
+			      </tr>
+			      <tr>
+			        <td>"Date"</td>
+			        <td>Datetime</td>
+			        <td>Permet de spécifier la date d'entrée via un datepicker (calendrier jquery)</td>
+			      </tr>
+			     
+			    </tbody>
+			  </table>
+
+			
+
+		<h3>3.6 <em> Sélectionner un fournisseur</em> 
+				<span>Tec 2.2 <a>voir</a> Req 2.2</span></h3>
+
+				<p>Lorsque <strong>l'utilisateur</strong> effectue une recherche via le champs prévu à cet effet.</p>  
+				<div class="code"><code>&lt;input type="radio"&gt;</code></div> 
+				<p> L'appel ajax <div class="code1">"$http.get()"</div> est alors effectué pour appeler la fonction </p>
+				<div class="code">"get_fournisseurs()"</div> 
+				<p>qui executera la commande sql suivante :</p>
+				<div class="code2">'SELECT * FROM fournisseurs'</div>
+				<p>qui sélectionne les champs correspondants dans la base de données :</p>
+
+
+			
+
+				<table class="table-bordered">
+			    <thead>
+			      <tr>
+			        <th>Champs</th>
+			        <th>Type</th>
+			        <th>Usage</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <td>"Name"</td>
+			        <td>varchar(255)</td>
+			        <td>Le champ définit le nom du fournisseur et est obligatoire</td>
+			      </tr>
+			      <tr>
+			        <td>"Localisation"</td>
+			        <td>varchar(255)</td>
+			        <td>Permet d'entrer une localisation du fournisseur</td>
+			      </tr>
+			      <tr>
+			        <td>"Référence"</td>
+			        <td>varchar(255)</td>
+			        <td>La référence du fournisseur doit être saisie pour être ajoutée à la base de données</td>
+			      </tr>
+			      <tr>
+			        <td>"Date"</td>
+			        <td>Datetime</td>
+			        <td>Permet de spécifier la date d'entrée via un datepicker (calendrier jquery)</td>
+			      </tr>
+			     
+			    </tbody>
+			  </table>
+
+			
+			
+
+		<h3>3.7 <em> Modifier un fournisseur Tec 2.3 voir req 2.3</em></h3>
+
+				<p><strong>L'utilisateur</strong> aura la possibilité de modifier un article dans la base de données en cliquant sur l'icône <img src="img/pencil.png"> via le tableau,</p>
+
+
+				<p>L'appel ajax suivant :</p><div class="code1">"$http.post()"</div><p> est alors effectué pour appeler la fonction</p> 
+				<p><div class="code">"update_fournisseur()"</div></p>
+
+				<div class="code2">'SELECT * FROM fournisseurs WHERE id = :id'</div>
+				<p>qui sélectionne les champs correspondants dans la base de données.</p>
+
+				<p>puis la fonction</p>
+				<div class="code2">'UPDATE article SET articles ='".$articles."' , description ='".$description."' , reference ='".$reference."' , fournisseurs ='".$fournisseurs."' , date ='".$date."' , stock ='".$stock."' WHERE id=".$id'</div>	
+				<p>qui modifie les champs correspondants dans la base de données.</p>
+			
+
+		<h3>3.8 <em> Supprimer un fournisseur Tec 2.4 voir Req 2.4</em></h3>
+
+				<p><strong>L'utilistateur</strong> aura la possibilité de supprimer un article dans la base de données en cliquant sur l'icône <img src="img/cross.png"> via le tableau,</p>
+
+				<p> l'appel ajax suivant <div class="code1">"$http.get()"</div> déclanchera la fonction suivante: </p>	
+				<div class="code">"delete_fournisseur()"</div>
+
+				<p>La commande SQL suivante sera alors executée:</p>
+				<div class="code">"DELETE FROM fournisseurs WHERE id =".$id"</div>
+
+				<p>Une modal de confirmation s'ouvrira :
+				</p>
+					<!--#todo mettre le code de la confirmation de suppression-->
+ -----FIN FOURNISSEURS ---- 
+
+ 				<h3>3.9 <em> Ajouter un utilisateur</em> <span>Tec 3.1 voir Req 3.1</span></h3>
+
+			<p>La fonctionnalité d'ajout s'effectue via un CRUD, par la fonction <div class="code">"add_user()"</div> qui est déclanchée par l'appel ajax suivant <div class="code">"$http.post()"</div> </p>
+			<p>Une fois la fonction déclanchée, la commande SQL suivante est alors exécutée :</p>
+			<div class="code2">"INSERT INTO users (username, password) VALUES ('".$username."', '".$password."')"</div>				
+			<p> Le contenu est alors ajouté dans la base de données en reçevant un ID généré automatiquement, qui est de type <em>"integer"</em>.</p>
+			<p> Les champs contenus dans la table <strong>users</strong> peuvent être remplit dans la base de données tel que : </p>
+
+
+				<table class="table-bordered">
+			    <thead>
+			      <tr>
+			        <th>Champs</th>
+			        <th>Type</th>
+			        <th>Usage</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <td>"Username"</td>
+			        <td>varchar(255)</td>
+			        <td>Le champ définit le nom de l'utilisateur et est obligatoire</td>
+			      </tr>
+			      <tr>
+			        <td>"Password"</td>
+			        <td>varchar(255)</td>
+			        <td>Permet d'entrer un mot de passe</td>
+			      </tr>
+			      <tr>
+			        <td>"Admin"</td>
+			        <td>tinyint(1)</td>
+			        <td>La référence du fournisseur doit être saisie pour être ajoutée à la base de données</td>
+			      </tr>
+			      <tr>
+			        <td>"Date"</td>
+			        <td>datetime</td>
+			        <td>Permet de spécifier la date d'entrée via un datepicker (calendrier jquery)</td>
+			      </tr>
+			      <tr>
+			        <td>"Token"</td>
+			        <td>datetime</td>
+			        <td>Suite de caractères générée automatiquement et aléatoirement pour les sessions de connexions  </td>
+			      </tr>
+			     
+			    </tbody>
+			  </table>
+
+
+
+    		<h3>4.2 <em> Modifier un utilisateur</em> <span>Tec 3.2 voir Req 3.2</span></h3>
+
+
+				<p><strong>L'utilisateur</strong> aura la possibilité de modifier un article dans la base de données en cliquant sur l'icône <img src="img/pencil.png"> via le tableau,</p>
+
+
+				<p>L'appel ajax </p><div class="code1">"$http.post()"</div><p> est alors effectué pour appeler la fonction</p> 
+				<p><div class="code">"update_users()"</div></p>
+
+				<div class="code2">'SELECT * FROM users WHERE id = :id'</div>
+				<p>qui sélectionne les champs correspondants dans la base de données,</p>
+
+				<p>puis la fonction</p>
+				<div class="code2">'UPDATE users SET username ='".$username."' , password ='".$password."' WHERE id=".$id'</div>	
+				<p>qui modifie les champs correspondants dans la base de données.</p>
+
+			<h3>4.3 <em>Supprimer un utilisateur Tec 3.3 voir Req 3.3</em></h3>
+
+				<p><strong>L'utilistateur</strong> aura la possibilitée de supprimer un article dans la base de données en cliquant sur l'icône <img src="img/cross.png"> via le tableau.</p>
+
+				<p> L'appel ajax suivant <div class="code1">"$http.get()"</div> déclanchera la fonction suivante: </p>	
+				<div class="code">"delete_user()"</div>
+
+				<p>La commande SQL suivante sera alors executée:</p>
+				<div class="code">"DELETE FROM users WHERE id =".$id"</div>
+
+				<p>Une modal de confirmation s'ouvrira </p>
+					<!--#todo mettre le code de la confirmation de suppression-->	
+
+			<h3>4.4<em> Se connecter Tec 3.4 voir Req 3.4</em></h3>					
+				<p><strong>L'utilisateur</strong> saisit les champs pour la connexion</p> 
+				<p> l'appel ajax suivant <div class="code1">"$http.get()"</div> déclanchera la fonction suivante: </p>
+				<div class="code">"login_user()"</div>
+				<p>La commande SQL suivante sera alors executée:</p>
+				<div class="code2">"SELECT username FROM users WHERE username='$username' AND password='$password'"</div>
+				<p>puis pour modifier l'identifiant du token de connexion :</p>
+				<div class="code2">"UPDATE users SET token=:token WHERE username=:username AND password=:password"</div>
+
+			<h3>4.5<em> Reconnexion Tec 3.5 voir Req 3.4</em></h3>
+			<p><strong>L'utilisateur</strong> pourra fermer la fenêtre sans se déconnecter puis la réouvrir et retrouver sa connection, si l'utilisateur ne s'est pas déconnecté alors :</p>
+			<p> l'appel ajax suivant <div class="code1">"$http.get()"</div> déclanchera la fonction suivante: </p>
+			<div class="code">"check_token()"</div>
+			<p>La commande SQL suivante sera alors executée:</p>
+			<div class="code2">"SELECT * FROM users WHERE token='$token'"</div>
+			<p> et vérifiera l'identifiant de connexion dans la base de données </p>
+
+
+			<h3>4.6<em> Déconnexion Tec 3.6 voir Req 3.5</em></h3>
+			<p><strong>L'utilisateur</strong> pourra se déconnecter en cliquant sur le bouton prévu à cet effet:</p>
+			<p> l'appel ajax suivant <div class="code1">"$http.get()"</div> déclanchera la fonction suivante: </p>
+			<div class="code">"logout_user()"</div>
+			<p>La commande SQL suivante sera alors executée:</p>
+			<div class="code2">"UPDATE users SET token='LOGGED OUT' WHERE token=$token"</div>
+			<p>Pour réinitialiser la valeur du token à "logged out" </p>
+			
+
+
+		<hr>
+
+
+
+		<h2>4. Contraintes</h2>
+
+			<h3>4.1 <em>Techniques</em></h3>
+
+			<p>Les téchnologies utilisées pour le développement sont :</p>
+
+			<ul>
+				<li>Linux</li>
+				<li>PHP 7</li>
+				<li>MySQL</li>
+				<li>Angular JS 2</li>
+				<li>jQuery</li>
+			</ul>
+
+			
+			<h3>4.2 <em>Temporelles</em></h3>
+
+			<p>Le temps imposé est de 1 mois. L'estimation de la charge de travail par l'équipe de développement est de 7 semaines.</p>
+
+			<h3>4.3 <em>Graphiques</em></h3>
+
+			<p>Pas de charte requise. L'ensemble de l'application sera simple, fonctionnel, facile d'accès avec une interface utilisateur rapide et efficace.</p>
+
+		<hr>
+
+		<h2>5. Description des données</h2>
+
+			<p>Ceci est la représentation de la base de données.</p>
+
+			<h3>5.1 <em>Unified Modeling Language (UML)</em></h3>
+
+			<div class="logo size">
+				<img src="img/2techUml.png">
+			</div>
+
+			<h3>5.2 <em>Business Process Modeling Language (BPML)</em></h3>
+
+			<div class="logo size">
+				<img src="img/Bpmn1.1.png">
+			</div>
+
+	</article>
+
+</body>
+</html>

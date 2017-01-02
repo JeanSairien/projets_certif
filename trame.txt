@@ -16,7 +16,7 @@ geré et organiser par la fondation face qui a repondue a l'appel a projet de la
 --- Nous avons developper l'application a l'aide d'un serveur web apache[num 		version] le langagues php dans sa version 7 ,est utiliser pour la manipulation des données ---
 	
 	-Maquetter une application
-	logiciel utiliser et version ()
+	 logiciel en ligne  mockup
 
 	-Concevoir une base de données
 

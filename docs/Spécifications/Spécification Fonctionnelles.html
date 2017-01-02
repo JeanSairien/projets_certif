@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>Spécification Fonctionnelles</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<article>
+		<h1>Spécification Fonctionnelles</h1>
+
+		<h2>1. Contexte</h2>
+
+			<p>L'objectif est d'apporter de l'organisation, de la facilité d'accès et de recherche dans les stocks du magasin, en concevant une application plus intuitive. De ce fait, elle intervient dans le cadre du remplacement de la précédente.</p>
+
+		<hr>
+
+		<h2>2. Description générale</h2>
+
+			<h3>2.1 <em>Arborescence</em></h3>
+
+			<div class="logo">
+				<img src="img/arborescence.png">
+			</div>
+
+			<h3>2.2. <em>Rubriquage et workflow</em> <span>[Req 1.0]</span></h3>
+
+			<div class="logo size">
+				<p>L'application sera composé de trois sections dans un menu de navigation en haut de page.</p>
+				<img src="img/nav.png">
+			</div>
+		<hr>
+
+		<h2>3. Fonctions de service</h2>
+
+			<h3>3.1 <em>Ajouter un article</em> <span>[Req 1.1]</span></h3>
+
+			<p><strong>L'utilisateur</strong> entre son contenu via un formulaire de saisie, lorsqu'il clique sur le bouton, <span>
+				<div class="logo size-small">
+					<img src="img/ajout-article.png">
+				</div>
+			</span> le contenu est alors ajouté dans la base de données. Le formulaire permet la saisie des informations suivantes :</p>
+
+			<div class="logo size-large">
+				<img src="img/modal-ajout-article.png">
+			</div>
+
+			<h3>3.2 <em>Sélectionner un article</em> <span>[Req 1.2]</span></h3>
+
+			<p><strong>L'utilisateur</strong> aura la possibilité de choisir un <strong>article</strong> dans la base de donnée en effectuant une recherche via un tableau, qui comprendra un champ dédié.
+				<span>
+					<div class="logo">
+						<img src="img/recherche.png">
+					</div>
+				</span> puis de la sélectionner par l'intermédiaire d'un bouton, 
+			</p>
+			<div class="logo gen">
+				<img src="img/selection.png">
+			</div>
+			<p>pour ensuite afficher les informations de l'<strong>article</strong> sélectionné.</p>
+			<div class="logo size">
+				<img src="img/view-article.png">
+			</div>
+
+			<h3>3.3 <em>Modifier un article</em> <span>[Req 1.3]</span></h3>
+
+			<p><strong>L'utilisateur</strong> aura la possibilité de modifier un <strong>article</strong> dans la base de donnée en cliquant sur l'icone <img src="img/pencil.png"> via le tableau,
+				<span>
+					<div class="logo gen">
+						<img src="img/edition.png">
+					</div>
+				</span>
+			</p>
+			<p>qui ouvrira une modal contenant un formulaire qui permettra les saisies suivantes :
+				<span>
+					<div class="logo size-large">
+						<img src="img/modal-modif-article.png">
+					</div>
+				</span>
+			</p>
+
+			<h3>3.4 <em>Supprimer un article</em> <span>[Req 1.4]</span></h3>
+
+			<p><strong>L'utilisateur</strong> aura la possibilité de supprimer un <strong>article</strong> dans la base de donnée en cliquant sur l'icone <img src="img/cross.png"> via le tableau,
+				<span>
+					<div class="logo gen">
+						<img src="img/suppression.png">
+					</div>
+				</span>
+			</p>
+			<p>qui ouvrira une modal contenant le message de confirmation suivant :
+				<span>
+					<div class="logo size-large">
+						<img src="img/modal-del-article.png">
+					</div>
+				</span>
+			</p>
+
+			<h3>3.5 <em>Ajouter un fournisseur</em> <span>[Req 2.1]</span></h3>
+
+			<p><strong>L'utilisateur</strong> entre son contenu via un formulaire de saisie, lorsqu'il clique sur le bouton, <span>
+				<div class="logo size-small">
+					<img src="img/ajout-fournisseur.png">
+				</div>
+			</span> le contenu est alors ajouté dans la base de données. Le formulaire permet la saisie des informations suivantes :</p>
+
+			<div class="logo size-large">
+				<img src="img/modal-ajout-fournisseur.png">
+			</div>
+
+			<h3>3.6 <em>Sélectionner un fournisseur</em> <span>[Req 2.2]</span></h3>
+
+			<p><strong>L'utilisateur</strong> aura la possibilité de choisir un <strong>fournisseur</strong> dans la base de donnée en effectuant une recherche via un tableau, qui comprendra un champ dédié.
+				<span>
+					<div class="logo">
+						<img src="img/recherche.png">
+					</div>
+				</span> puis de la sélectionner par l'intermédiaire d'un bouton, 
+			</p>
+			<div class="logo gen">
+				<img src="img/selection.png">
+			</div>
+			<p>pour ensuite afficher les informations de le <strong>fournisseur</strong> sélectionné.</p>
+			<div class="logo size">
+				<img src="img/view-fournisseur.png">
+			</div>
+
+			<h3>3.7 <em>Modifier un fournisseur</em> <span>[Req 2.3]</span></h3>
+
+			<p><strong>L'utilisateur</strong> aura la possibilité de modifier un <strong>fournisseur</strong> dans la base de donnée en cliquant sur l'icone <img src="img/pencil.png"> via le tableau,
+				<span>
+					<div class="logo gen">
+						<img src="img/edition.png">
+					</div>
+				</span>
+			</p>
+			<p>qui ouvrira une modal contenant un formulaire qui permettra les saisies suivantes :
+				<span>
+					<div class="logo size-large">
+						<img src="img/modal-modif-fournisseur.png">
+					</div>
+				</span>
+			</p>
+
+			<h3>3.8 <em>Supprimer un fournisseur</em> <span>[Req 2.4]</span></h3>
+
+			<p><strong>L'utilisateur</strong> aura la possibilité de supprimer un <strong>fournisseur</strong> dans la base de donnée en cliquant sur l'icone <img src="img/cross.png"> via le tableau,
+				<span>
+					<div class="logo gen">
+						<img src="img/suppression.png">
+					</div>
+				</span>
+			</p>
+			<p>qui ouvrira une modal contenant le message de confirmation suivant :
+				<span>
+					<div class="logo size-large">
+						<img src="img/modal-del-fournisseur.png">
+					</div>
+				</span>
+			</p>
+
+			<h3>3.9 <em>Ajouter un utilisateur</em> <span>[Req 3.1]</span></h3>
+
+			<p><strong>L'administrateur</strong> entre son contenu via un formulaire de saisie, lorsqu'il clique sur le bouton, <span>
+				<div class="logo size">
+					<img src="img/ajout-user.png">
+				</div>
+			</span> le contenu est alors ajouté dans la base de données. Le formulaire permet la saisie des informations suivantes :</p>
+
+			<div class="logo size-large">
+				<img src="img/modal-ajout-user.png">
+			</div>
+
+			<h3>4.0 <em>Modifier un utilisateur</em> <span>[Req 3.2]</span></h3>
+
+			<p><strong>L'administrateur</strong> aura la possibilité de modifier un <strong>utilisateur</strong> dans la base de donnée en cliquant sur l'icone <img src="img/pencil.png"> via le tableau,
+				<span>
+					<div class="logo size">
+						<img src="img/edition-user.png">
+					</div>
+				</span>
+			</p>
+			<p>qui ouvrira une modal contenant un formulaire qui permettra les saisies suivantes :
+				<span>
+					<div class="logo size-large">
+						<img src="img/modal-modif-user.png">
+					</div>
+				</span>
+			</p>
+
+			<h3>4.1 <em>Supprimer un utilisateur</em> <span>[Req 3.3]</span></h3>
+
+			<p><strong>L'administrateur</strong> aura la possibilité de supprimer un <strong>utilisateur</strong> dans la base de donnée en cliquant sur l'icone <img src="img/cross.png"> via le tableau,
+				<span>
+					<div class="logo size">
+						<img src="img/suppression-user.png">
+					</div>
+				</span>
+			</p>
+			<p>qui ouvrira une modal contenant le message de confirmation suivant :
+				<span>
+					<div class="logo size-large">
+						<img src="img/modal-del-user.png">
+					</div>
+				</span>
+			</p>
+
+			<h3>4.2 <em>Se Connecter</em> <span>[Req 3.4]</span></h3>
+
+			<p>Lorsque l'<strong>utilisateur</strong> ouvrira l'application, il arrivera directement sur la page où il devra s'identifier via cette interface.</p>
+			<div class="logo">
+				<img src="img/connexion.png">
+			</div>
+
+		<hr>
+
+			<h3>4.3 <em>Se Déconnecter</em> <span>[Req 3.5]</span></h3>
+			
+			<p>Lorsque l'<strong>utilisateur</strong> cliquera sur  le bouton de déconnexion, il sera rediriger sur la page où il devra s'identifier via le formulaire.</p>
+				<div class="logo">
+					<img src="img/deconnexion.png">
+				</div>
+				
+				<hr>
+
+		<h2>4. Contraintes</h2>
+
+			<!-- <h3>4.1 <em>Techniques</em></h3>
+
+			<p>Les technologies utilisés pour le développement sont :</p>
+
+			<ul>
+				<li>Linux</li>
+				<li>PHP 7</li>
+				<li>MySQL</li>
+				<li>Angular JS</li>
+				<li>jQuery</li>
+			</ul> -->
+
+			<h3>4.1 <em>Fonctionnelles</em></h3>
+
+			<p>Le fonctionnement doit comporter les même fonctionnalités de l'ancienne application de gestion.</p>
+
+			<h3>4.2 <em>Temporelles</em></h3>
+
+			<p>Le temps imposé est de 1 mois. L'estimation de la charge de travail par l'équipe de développement est de 7 semaines.</p>
+
+			<h3>4.3 <em>Graphiques</em></h3>
+
+			<p>Pas de charte requise. L'ensemble de l'application sera simple, fonctionnelles, facile d'accès avec une interface utilisateur rapide et efficace.</p>
+
+	</article>
+
+</body>
+</html>

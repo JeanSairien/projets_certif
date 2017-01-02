@@ -1,0 +1,61 @@
+﻿
+Fiche descriptive de la pratique professionnelle
+Correspondant à l’activité type n°    2   (Voir le mode d’emploi) 
+
+Intitulé de l’activité-type : Développer une application web
+
+1 - Indiquez les résultats directs de votre action : produits fabriqués, ouvrages, prestations de service ou autres productions que vous avez réalisés ou auxquels vous avez contribué :
+ développement d’une interface graphique en interaction avec les fonctionnalitées et la base de données  
+
+2 -  Décrivez les tâches et/ou opérations que vous avez directement effectuées en vue des réalisations indiquées ci-dessus ainsi que leur fréquence de réalisation :
+Environnements de travail
+Développer des pages web en lien avec une base de données
+- installation d’un serveur web (apache 2)
+- installation d’une interface de gestion de la base de données (phpmyadmin 4,5,4,1)
+- installation et mise en place des framework (AngularJs 2 et de bootstrap 3,3,6)
+
+Conception :
+-conception du cahier des charges 
+- conception et mise en place d’une base de données 
+- réalisation des différents schéma : UML, BPML 
+
+Développement :
+- développement de l’application suivant le cahier des charges
+- développement des composants d’acces au données
+- Maquettage de l’application et mise en place des composants d’interface (dans le cadre de la version anterieur du projet )
+
+
+
+
+
+
+
+
+Fréquence de réalisation :
+	          Très fréquemment  		   Fréquemment X 	           Rarement			
+
+
+3 - Lieux où cette pratique professionnelle a été exercée :
+Nom de l’entreprise, organisme ou association
+Lieu
+Chantier, atelier, services ou autres (à préciser)
+Code Academie FACE Rennes
+25 rue des Aiguillon
+35200 Rennes     
+
+
+
+ Code Academie FACE Rennes
+25 rue des Aiguillon
+35200 Rennes         
+ Code Academie FACE Rennes
+25 rue des Aiguillon
+35200 Rennes         
+
+4 - Indiquez la période de l’exercice de cette pratique professionnelle :
+Du   17/05/2016    au 20/01/2017     
+5 - Précisez les moyens que vous avez utilisés pour accomplir les tâches décrites : matériels, outils, techniques, matériaux, produits, logiciels,… :
+IDE: sublim text 3
+logiciel de modelisation uml / bpml : Draw.io
+Langages informatiques utilisés : Php, Html, CSS, SQL     
+

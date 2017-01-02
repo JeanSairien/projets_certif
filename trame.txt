@@ -36,9 +36,11 @@ trame de présentation pour certification de developpeur logiciel
 
 10 utilisateurs pourront utiliser l'application simultanement 
 
+
 ---nouveau design----
 
 	Un nouveau designe epuré agrementer des framework angular js 2 et bootstrap 3.3.6, 
+
 
 	un code remasteriser 
 
@@ -62,6 +64,7 @@ trame de présentation pour certification de developpeur logiciel
 
 
 
+
 -Maquetter une application
 	logiciel utiliser et version ()
  	
@@ -74,6 +77,7 @@ trame de présentation pour certification de developpeur logiciel
 		
 	apres études des besoins nous avons pue mettre en place 3 tables:
 
+
 		articles :
 
 		fournisseurs :
@@ -83,6 +87,9 @@ trame de présentation pour certification de developpeur logiciel
 		utilisateurs : 
 
 		mysql version ? 
+
+
+
 
 ---Mettre en place une base de données---
 
@@ -94,6 +101,7 @@ ces trois table comporte le champ id auto incrementé pour chaques table et les 
 		fournisseurs: name, localisation, reference, date
 
 		utilisateurs: username, password(sha1), date,  token 
+
 
 
 ---Développer des composants d'accès aux données---

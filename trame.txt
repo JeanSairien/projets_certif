@@ -24,7 +24,6 @@ trame de présentation pour certification de developpeur logiciel
 
 --le prestataire actuel--
 	la code academie est une ecole de programmation en environement web 
-
 	geré et organiser par la fondation face qui a repondue a l'appel a projet de l'etat :
 	la grand ecole du numerique
 
@@ -55,12 +54,27 @@ trame de présentation pour certification de developpeur logiciel
 	l'accéss au panel via une page de login :
 	l'administateur aura donc la section gestion des utilisateurs accecibles ainsi que tout les fonctionnalitées de gestion de stock alors qu'un simple utilisateurs ne pourra qu'utiliser les fonctionnalitées de gestion de stock
 
----l'equipe ----
+---l'equipe---
 
 	quand je disait tout a lheure nous je voulais biensur parler des deux developpeurs qui travaillaient sur le projet au sein de la code academie :
 
 	jonathan platon et moi meme 
 
+---les technologie--- 	
+
+	Nous avons donc utiliser les differentes technologies suivante :
+
+	Angular Js et son MVC
+
+	Bootstrap v 3.3.6
+
+	Apache 2.4.18   
+
+	Mysql  5.7.16
+
+	Phpmyadmin 4.5.4.1
+
+	Php 7
 
 
 

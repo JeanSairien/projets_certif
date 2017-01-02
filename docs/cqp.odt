@@ -8,14 +8,14 @@ Intitulé de l’activité-type : Développer une application web
  développement d’une interface graphique en interaction avec les fonctionnalitées et la base de données  
 
 2 -  Décrivez les tâches et/ou opérations que vous avez directement effectuées en vue des réalisations indiquées ci-dessus ainsi que leur fréquence de réalisation :
+Développer des pages web en lien avec une base de données :
 Environnements de travail
-Développer des pages web en lien avec une base de données
 - installation d’un serveur web (apache 2)
 - installation d’une interface de gestion de la base de données (phpmyadmin 4,5,4,1)
 - installation et mise en place des framework (AngularJs 2 et de bootstrap 3,3,6)
 
 Conception :
--conception du cahier des charges 
+- conception du cahier des charges 
 - conception et mise en place d’une base de données 
 - réalisation des différents schéma : UML, BPML 
 
@@ -25,11 +25,18 @@ Développement :
 - Maquettage de l’application et mise en place des composants d’interface (dans le cadre de la version anterieur du projet )
 
 
+Mettre en œuvre une solution de gestion de contenue : 
+Le projet nécessitant peu de gestion de contenue : Nous avons donc mit en place un Crud : fonctionnalités d’ajout, de lecture, de modification et de suppression. 
+Ces fonctionnalités on été implémenté pour les articles, les fournisseurs, ainsi que les utilisateurs
+Au cours d’un autre projet : nous avons réaliser un projet avec le cms wordpress et donc nous avons pue implémenter  une solution de gestion de contenue grace a l’interface de wordpress, pour le projet « Ebulition » Un site vitrine pour vendre des vêtements fantaisie 
 
-
-
-
-
+Sur le développement d’un projet annexe : « Shambhalafm.fr » est un projet personnel réaliser en dehors de la formation .
+Le site est une web radio diffusant de la musique électronique et des chroniques sur le monde numérique et les jeux vidéo : J’ai pue mettre en place une solution de gestion de contenue, en php via un formulaire d’upload des publications   et les fonctionnalités associer permettant la modification des publication dans la base de données via une requette sql
+Développer une application simple de mobilité numérique : 
+Au cours du développement du projet 2tech grâce a angular js et a bootstrap nous avons pue mettre en place une solution responsive répondant a un design adaptatif a l’affichage matériel 
+Utiliser l’anglais dans son activité professionnelle en informatique : 
+l’anglais a été utiliser pour concevoir un résumé du projet 
+nous avons pue par ailleurs rédiger nos commit sur les plateformes de versionnage  en anglais 
 
 Fréquence de réalisation :
 	          Très fréquemment  		   Fréquemment X 	           Rarement			
@@ -57,5 +64,5 @@ Du   17/05/2016    au 20/01/2017     
 5 - Précisez les moyens que vous avez utilisés pour accomplir les tâches décrites : matériels, outils, techniques, matériaux, produits, logiciels,… :
 IDE: sublim text 3
 logiciel de modelisation uml / bpml : Draw.io
-Langages informatiques utilisés : Php, Html, CSS, SQL     
-
+Langages informatiques utilisés : Php, Html, CSS, SQL,JS     
+in:#simplinux 

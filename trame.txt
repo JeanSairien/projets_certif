@@ -4,43 +4,132 @@ trame de présentation pour certification de developpeur logiciel
 
 5 minutes max
 
-Rapide presentation du projet 
-Présentation Du projet,des ressource humaines et de l'entreprises
+----[slide]----
 
-code academie est une ecole de programmation en environement web 
-geré et organiser par la fondation face qui a repondue a l'appel a projet de la grand ecole du numerique 
+--Presentation du client--
 
+	2tech
+
+--environnement--
+
+	l'application ce situe dans un context industriel et a pour but de gerer les stocks de l'entreprise 
+	qui oeuvre dans la reparation d'installation electronique et optique
+
+--le prestataires initial--
+
+	le Projet a initialement  etait confier à Wanalike network, une plateforme de partage et de rencontre reunissant une communauté d'une 100ene de personne et  proposant divers services tel que la conception de sites web ainsi que de lhebergement web  
+
+	Wanalike a placer deux de ses developpeur : matthieu bernolin et moi meme
+
+--le prestataire actuel--
+	la code academie est une ecole de programmation en environement web 
+
+	geré et organiser par la fondation face qui a repondue a l'appel a projet de l'etat :
+	la grand ecole du numerique
+
+	et nous avons donc repris les travaux de wanalike pour faire une nouvelle version pour la soutenance  
+
+---10 utilisateurs/10000 produit---
+
+	l'application pourra recevoir 10000 produit dans sa base de données 
+
+10 utilisateurs pourront utiliser l'application simultanement 
+
+---nouveau design----
+
+	Un nouveau designe epuré agrementer des framework angular js 2 et bootstrap 3.3.6, 
+
+	un code remasteriser 
+
+---l'administration ----
+	
+	l'administration du site ce fera via une modale d'ajout que seul l'administrateur pourra utiliser
+
+	il n'y aura qu'un seul role administrateur 
+
+---les access---
+
+	l'accéss au panel via une page de login :
+	l'administateur aura donc la section gestion des utilisateurs accecibles ainsi que tout les fonctionnalitées de gestion de stock alors qu'un simple utilisateurs ne pourra qu'utiliser les fonctionnalitées de gestion de stock
+
+---l'equipe ----
+
+	quand je disait tout a lheure nous je voulais biensur parler des deux developpeurs qui travaillaient sur le projet au sein de la code academie :
+
+	jonathan platon et moi meme 
+
+
+
+
+-Maquetter une application
+	logiciel utiliser et version ()
  	
 
-- Développer une application client-serveur
---- Nous avons developper l'application a l'aide d'un serveur web apache[num 		version] le langagues php dans sa version 7 ,est utiliser pour la manipulation des données ---
+--- Développer une application client-serveur---
+	 Nous avons developper l'application a l'aide d'un serveur web apache [num-version] le langagues php dans sa version 7 ,est utiliser pour la manipulation des données 
 	
-	-Maquetter une application
-	logiciel utiliser et version ()
 
-	-Concevoir une base de données
+---Concevoir une base de données---
+		
+	apres études des besoins nous avons pue mettre en place 3 tables:
 
-	mysql version ? 
-
-	-Mettre en place une base de données
 		articles :
 
 		fournisseurs :
 
-		utilisateurs :
+					-----avec une relation many to many 
 
-	-Développer des composants d'accès aux données
+		utilisateurs : 
 
-	une modal avec un formulaire d'ajout gerer par des appel ajax coté front 
-	et les fonctionnalité d'ajout en php avec leur requettes sql associé 
+		mysql version ? 
+
+---Mettre en place une base de données---
+
+ces trois table comporte le champ id auto incrementé pour chaques table et les champs suivant 
+		
+
+		article: articles , description, reference, fournisseurs, date, stock
+
+		fournisseurs: name, localisation, reference, date
+
+		utilisateurs: username, password(sha1), date,  token 
+
+
+---Développer des composants d'accès aux données---
+
+
+	une modal avec un formulaire d'ajout, modification et de suppression on été crée a l'aide de bootstrap 3.3.6 gérer par des appel ajax coté front, 
+	et les fonctionnalitées en php avec leur requettes sql respective 
+	pour l'ajout la modification et la suppression 
+	la modal d'ajout se situe dans son propre encart 
+	alors que les fonctionnalitées de modification et de suppression sont accesibles dans le tableaux via les differentes icones 
 
 
 
-- Développer une application web
+
 	
-	Développer des pages web en lien avec une base de données
+--- Développer des pages web en lien avec une base de données
 
-	Mettre en œuvre une solution de gestion de contenu ou e-commerce
+	l'application comporte trois pages : les stock ,  les fournisseurs , et les utilisateurs
+
+--- Mettre en œuvre une solution de gestion de contenu ou e-commerce ---
+
+	le projet ne nessitant pas de gestion de contenue : je vais donc vous parler du projet realiser au cours de la formation dipenser par la code academie : 
+
+	ebulittion:
+	 un site vitrine qui a pour but de vendre des vetements indiens fantaisie 
+	 en equipe nous avons realiser le projet avec le framwork word press 
+
+	 Nous avons donc pue mettre en place une solution de gestion de contenue 
+
+	 je vais aussi vous parler d'un projet personnel : 
+	 realiser en dehors de la formation :
+
+	 Shambhalafm.fr 
+
+	 Un site de web radio diffusant de la musique electronique et de l'actue sur le monde numerique et gaming 
+
+
 
 
 

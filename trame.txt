@@ -60,7 +60,7 @@ trame de présentation pour certification de developpeur logiciel
 
 	jonathan platon et moi meme 
 
----les technologie--- 	
+---les technologies--- 	
 
 	Nous avons donc utiliser les differentes technologies suivante :
 
@@ -74,7 +74,7 @@ trame de présentation pour certification de developpeur logiciel
 
 	Phpmyadmin 4.5.4.1
 
-	Php 7
+	Php 7 pour ca longevité de part sa sortie rescente 
 
 
 

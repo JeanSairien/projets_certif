@@ -25,9 +25,9 @@ Its name is 2tech, it’s an enterprise located in the south of Brittany.
 (Firstly, a quick history of the coworkers who worked on this project:)
 
 The owner of the project initially enstrusted the project to Wanalike Network and further on
-(for the present test) we worked on the project at the Code Academie school.
+(for the present test) we worked on the project at the Code Academie school.es
 Wanalike Network is a little social network but it’s also a platform that allows us to meet people and to exchange knowledge and experiences.
-With Matthieu Bernolin, my friend and partner at Wanalike, we did a lot of work on the panel for many weeks and a first version was born.
+With Matthieu Bernolin, partner at Wanalike, we did a lot of work on the panel for many weeks and a first version was born.
 And today it's a developed version built by Jonathan Platon and me.
 
 
@@ -46,7 +46,7 @@ The panel can contain 10000(ten thousand) products in its database and ten staff
 (Finally a technical aspect:)
 
 We created a new design, we upgraded the programme and we integrated the popular framework angular.js.
-For this newest version, we used bootstrap for the css, php7 for the back-office in font scratch mode.
+For this newest version, we used bootstrap for the css, php7 for the back-office in from scratch mode.
 For the database we used mysql with phpmyadmin and apache for the web server.
 
 

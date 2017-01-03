@@ -43,8 +43,10 @@ _Un developpeur full-stack: **julien vaupré**_
 
 _Un developpeur  back-end: **matthieu bernolin**_ 
 			
-* Wanalike sera chargé de fournir un support d'utilisation et de maintenances pendant deux mois apres la mise en production . 
-Une nouvelle etude de besoin en vue d'evolution du projet pourra etre mener apres 6 mois de production via un avenant envoyer au minimum 2 semaine au préalable.									
+---
+
+**Wanalike sera chargé de fournir un support d'utilisation et de maintenances pendant deux mois apres la mise en production . 
+Une nouvelle étude de besoins en vue d'évolution du projet pourra etre mener apres 6 mois de production via un avenant envoyer au minimum 2 semaine au préalable.**									
 
 
 ##2° Déscriptif du projet## 
@@ -101,9 +103,11 @@ _Destinataire : **Francois LE HIREZ**_
 		
 ####4.1.1 les choix de l'equipe 
 
-* le html5 et le css3 ainsi que le framwork Angular js 2 seront utiliser pour le projet .
+* le html5 et le css3 ainsi que le framwork Angular js  seront utiliser pour le projet .
 
-* Pour une meilleurs compatibilté, les developpeurs on choisit la version 7 de php ainsi que mysql pour la base de données 	
+* Pour une meilleurs compatibilté, les developpeurs on choisit la version 7 de php pour sa longevité en vue de sa sortie rescente ainsi que mysql dans sa version 5.7.16 pour la base de données, Le serveur web apache 2 dans ca version 2.4.18 et phpmyadmin version 4.5.4.1 pour l'interface de la base de données 
+
+* Aprés étude des besoins du clients , les développeurs on choisit de de reimplementer une nouvelle solution car 	 cela semblait plus cohérent  	
 
 * Les tests fonctionnel seront effectuer avec phpunit 
 

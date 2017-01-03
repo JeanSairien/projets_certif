@@ -1,3 +1,4 @@
+
 trame de présentation pour certification de developpeur logiciel 
 
 1° ----- resumé en anglais -----
@@ -23,22 +24,38 @@ trame de présentation pour certification de developpeur logiciel
 
 --le prestataire actuel--
 	la code academie est une ecole de programmation en environement web 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 10507f2f3bdb0562c4f590434a57291e2e35b04a
 	geré et organiser par la fondation face qui a repondue a l'appel a projet de l'etat :
 	la grand ecole du numerique
 
 	et nous avons donc repris les travaux de wanalike pour faire une nouvelle version pour la soutenance  
 
 ---10 utilisateurs/10000 produit---
+<<<<<<< HEAD
 
 	l'application pourra recevoir 10000 produit dans sa base de données 
 
 10 utilisateurs pourront utiliser l'application simultanement 
 
+=======
+
+	l'application pourra recevoir 10000 produit dans sa base de données 
+
+10 utilisateurs pourront utiliser l'application simultanement 
+
+
+>>>>>>> 10507f2f3bdb0562c4f590434a57291e2e35b04a
 ---nouveau design----
 
 	Un nouveau designe epuré agrementer des framework angular js 2 et bootstrap 3.3.6, 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 10507f2f3bdb0562c4f590434a57291e2e35b04a
 	un code remasteriser 
 
 ---l'administration ----
@@ -52,18 +69,42 @@ trame de présentation pour certification de developpeur logiciel
 	l'accéss au panel via une page de login :
 	l'administateur aura donc la section gestion des utilisateurs accecibles ainsi que tout les fonctionnalitées de gestion de stock alors qu'un simple utilisateurs ne pourra qu'utiliser les fonctionnalitées de gestion de stock
 
+<<<<<<< HEAD
 ---l'equipe ----
+=======
+---l'equipe---
+>>>>>>> 10507f2f3bdb0562c4f590434a57291e2e35b04a
 
 	quand je disait tout a lheure nous je voulais biensur parler des deux developpeurs qui travaillaient sur le projet au sein de la code academie :
 
 	jonathan platon et moi meme 
 
+<<<<<<< HEAD
+=======
+---les technologies--- 	
+
+	Nous avons donc utiliser les differentes technologies suivante :
+
+	Angular Js et son MVC
+
+	Bootstrap v 3.3.6
+
+	Apache 2.4.18   
+
+	Mysql  5.7.16
+
+	Phpmyadmin 4.5.4.1
+
+	Php 7 pour ca longevité de part sa sortie rescente 
+
+>>>>>>> 10507f2f3bdb0562c4f590434a57291e2e35b04a
 
 
 
 -Maquetter une application
 	logiciel utiliser et version ()
  	
+<<<<<<< HEAD
 
 --- Développer une application client-serveur---
 	 Nous avons developper l'application a l'aide d'un serveur web apache [num-version] le langagues php dans sa version 7 ,est utiliser pour la manipulation des données 
@@ -72,6 +113,17 @@ trame de présentation pour certification de developpeur logiciel
 ---Concevoir une base de données---
 		
 	apres études des besoins nous avons pue mettre en place 3 tables:
+=======
+
+--- Développer une application client-serveur---
+	 Nous avons developper l'application a l'aide d'un serveur web apache [num-version] le langagues php dans sa version 7 ,est utiliser pour la manipulation des données 
+	
+
+---Concevoir une base de données---
+		
+	apres études des besoins nous avons pue mettre en place 3 tables:
+
+>>>>>>> 10507f2f3bdb0562c4f590434a57291e2e35b04a
 
 		articles :
 
@@ -83,6 +135,12 @@ trame de présentation pour certification de developpeur logiciel
 
 		mysql version ? 
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 10507f2f3bdb0562c4f590434a57291e2e35b04a
 ---Mettre en place une base de données---
 
 ces trois table comporte le champ id auto incrementé pour chaques table et les champs suivant 
@@ -91,10 +149,18 @@ ces trois table comporte le champ id auto incrementé pour chaques table et les 
 		article: articles , description, reference, fournisseurs, date, stock
 
 		fournisseurs: name, localisation, reference, date
+<<<<<<< HEAD
 
 		utilisateurs: username, password(sha1), date,  token 
 
 
+=======
+
+		utilisateurs: username, password(sha1), date,  token 
+
+
+
+>>>>>>> 10507f2f3bdb0562c4f590434a57291e2e35b04a
 ---Développer des composants d'accès aux données---
 
 
@@ -157,16 +223,3 @@ Le candidat commence sa présentation au jury par un résumé en anglais de son 
 - Conception et codage
 - Présentation des éléments les plus significatifs de l’interface de l’application
 - Synthèse et conclusion
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -40,7 +40,7 @@ An administrator can make updates or delete users while a simple user can just u
 
 like add product or supplier
 
-The panel can contain 10000(ten thousand) products in its database and ten staff members can use the panel at the same time.
+The panel can contain 10000(ten thousand) products in the database and ten staff members can use the panel at the same time.
 
 
 (Finally a technical aspect:)
@@ -48,6 +48,8 @@ The panel can contain 10000(ten thousand) products in its database and ten staff
 We created a new design, we upgraded the programme and we integrated the popular framework angular.js.
 For this newest version, we used bootstrap for the css, php7 for the back-office in from scratch mode.
 For the database we used mysql with phpmyadmin and apache for the web server.
+
+
 
 
 Thank you for your attention. 

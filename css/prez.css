@@ -11,10 +11,8 @@
 		}
 
 		a:hover{
-			background-color:whitesmoke;
-			color:red;
-
-
+			background-color:blue;
+			color:yellow;
 
 		}
 		table {
@@ -284,7 +282,24 @@ h2{
 }
 
 .ju{
+
 	float:left;
+}
+
+.uml{
+	float:left;
+	height: 400px;
+	border: 1px solid black;
+
+}
+
+
+
+.mockup{
+	
+	height: 400px;
+	background-color: black !important;
+	border: 1px solid black;
 }
 
 .sql{
@@ -312,11 +327,23 @@ h2{
 	justify-content: center!important;
 	background-repeat: no-repeat;
 	background-size: cover;
-	transform: translate(12%, -50%)!important;
+	transform: translate(18%, -50%)!important;
 	padding: 0 ;
 	
 	height: 650px;
 	width: 1024px;
+
+}
+
+.modifss{
+	display: flex!important;
+	justify-content: center!important;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transform: translate(32%, -40%)!important;
+	padding: 0 ;
+	height: 450px;
+	width: 850px;
 
 }
 
@@ -526,12 +553,9 @@ h2{
 	font-size: 50px;
 	width: 15%;
 	height: 10%;
-
-
-
-
-
 }
+
+
 
 
 

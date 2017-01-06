@@ -5,9 +5,7 @@ trame de présentation pour certification de developpeur logiciel
 
 intro:
 (Good morning/afternoon, I am Julien, I would like to present and explain to you our project), this application is a useful panel to manage electronic components in an industrial repairing entrepise.
-
 Its name is 2tech, it’s an enterprise located in the south of Brittany.
-
 
 (Firstly, a quick history of the coworkers who worked on this project:)
 
@@ -17,18 +15,13 @@ Wanalike Network is a little social network but it’s also a platform that allo
 With Matthieu Bernolin, partner at Wanalike, we did a lot of work on the panel for many weeks and a first version was born.
 And today it's a developed version built by Jonathan Platon and me.
 
-
 (Secondly, a few characteristics of the panel:)
 
-
 To access the panel two rights are avalaible.
-
 An administrator can make updates or delete users while a simple user can just use the panel.
-
 like add product or supplier
 
 The panel can contain 10000(ten thousand) products in the database and ten staff members can use the panel at the same time.
-
 
 (Finally a technical aspect:)
 

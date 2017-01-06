@@ -231,9 +231,10 @@ div.pp{
 .titre{
 	display:flex;
 	justify-content: center;
-	color: blue!important;
+	color: yellow!important;
 	text-shadow: 5px 5px black ;
-	transform: translateY(50px);
+	transform: translateY(-2px);
+
 	
 }
 
@@ -354,7 +355,7 @@ h2{
 	justify-content: center!important;
 	background-repeat: no-repeat;
 	background-size: cover;
-	transform: translate(30%, -40%)!important;
+	transform: translate(25%, -40%)!important;
 	padding: 0 ;
 	height: 650px;
 	width: 850px;
@@ -500,7 +501,7 @@ h2{
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-size: 150px;
-	transform: translate(30%, -20%)!important;
+	transform: translate(25%, -20%)!important;
 	height: 450px;
 	width: 850px;
 
@@ -546,7 +547,7 @@ h2{
 	justify-content: center;
 	text-align: center;
 	border: 2px solid red;
-	color: blue!important;
+	color: yellow!important;
 	text-shadow: 4px 4px black;
 	box-shadow: 10px 10px 10px red;
 	background-color: rgba(255,255,255,0.3)!important;

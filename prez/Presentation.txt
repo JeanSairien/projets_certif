@@ -1,7 +1,7 @@
  http://raspberrypi.local/
 
 
-    variable keyirc "LfV066nVb47PATd"
+    
 
 
 

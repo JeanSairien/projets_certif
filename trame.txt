@@ -7,49 +7,42 @@ trame de présentation pour certification de developpeur logiciel
 
 ----[slide]----
 
+--Présentation de l’entreprise et/ou du service--
+
 --Presentation du client--
 
 	2tech
+--Contexte du projet (cahier des charges, environnement humain et technique)--
 
---environnement--
+	--environnement--
 
 	l'application ce situe dans un context industriel et a pour but de gerer les stocks de l'entreprise 
 	qui oeuvre dans la reparation d'installation electronique et optique
 
---le prestataires initial--
+	--le prestataires initial--
 
 	le Projet a initialement  etait confier à Wanalike network, une plateforme de partage et de rencontre reunissant une communauté d'une 100ene de personne et  proposant divers services tel que la conception de sites web ainsi que de lhebergement web  
 
 	Wanalike a placer deux de ses developpeur : matthieu bernolin et moi meme
 
---le prestataire actuel--
-	la code academie est une ecole de programmation en environement web 
-<	geré et organiser par la fondation face qui a repondue a l'appel a projet de 		l'etat :
-	la grand ecole du numerique
-
-	et nous avons donc repris les travaux de wanalike pour faire une nouvelle version pour la soutenance  
+	--le prestataire actuel--
+		la code academie est une ecole de programmation en environement web 
+		geré et organiser par la fondation face qui a repondue a l'appel a projet de l'etat :
+		la grand ecole du numerique
+	
+		et nous avons donc repris les travaux de wanalike pour faire une nouvelle version pour la soutenance  
 
 ---10 utilisateurs/10000 produit---
 
 
 	l'application pourra recevoir 10000 produit dans sa base de données 
 
-10 utilisateurs pourront utiliser l'application simultanement 
+	10 utilisateurs pourront utiliser l'application simultanement 
 
+---conception---
+	
+	suite a l'etude des besoins emit par wanalike nous avons pue reprendre leur travail en vue d'une amelioration du projet , etant moi meme a sur le projet emit par wanalike , nous avons preferer réimplémenter une nouvelle solution pour la soutenance , avec des amelioration tel qu'un nouvel UML et une nouvelle maquette plus sobre plus ergonomique et agreable a l'oeuil une partie du responsive a lui etait mise a jours pour les support avec de basse résolution (1024x a 768px de large)   
 
-
-	l'application pourra recevoir 10000 produit dans sa base de données 
-
-10 utilisateurs pourront utiliser l'application simultanement 
-
-
-
----nouveau design----
-
-	Un nouveau designe epuré agrementer des framework angular js 2 et bootstrap 3.3.6, 
-
-
-	un code remasteriser 
 
 ---l'administration ----
 	
@@ -91,7 +84,12 @@ trame de présentation pour certification de developpeur logiciel
 	Php 7 pour ca longevité de part sa sortie rescente 
 
 
+---conclusion----
 
+	Un nouveau designe epuré agrementer des framework angular js  et bootstrap 3.3.6, 
+
+
+	un code remasteriser 
 
 
 -Maquetter une application

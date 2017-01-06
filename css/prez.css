@@ -5,7 +5,12 @@
 		form,fieldset,input,textarea,p,blockquote,th,td {
 		    padding: 0 ;
 		    margin: 0 ;
-		}
+
+ 			}
+ 		
+
+
+
 		a{
 			text-decoration:none;
 		}
@@ -43,6 +48,8 @@
 		    margin:0;
 		    padding:0;
 		    color:#444;
+
+
 		}
 		q:before,q:after {
 		    content:'';
@@ -58,9 +65,10 @@
 		body{
 			font-family: arial,helvetica;
 			color: #F2F2F2;
-			background-image:url("../img/wallpaper.jpg"); 
+			background-image:url("../img/wallpaper1.jpg"); 
 			background-attachment: fixed;
 			background-size: cover;
+			background-color: rgba(255,255,255, 0.2);
 
 
 
@@ -70,6 +78,7 @@
 		}
 		p{
 			font-size: 2em;
+			color: red;
 		}
 
 		figcaption{
@@ -86,19 +95,20 @@
 		}
 
 		.title{
-			margin-top: 50%!important ;
-			color: grey;
 			
-
-
+			color: red!important;
+			border: 1px solid red;
+			background-color: rgba(255,255,255,0.2)!important;
+			
+			width: 80%;
 		}
 
 		.content{
-			margin-top: 2%;
 			margin-bottom: 0;
 			position: relative;
-			transform: translateY(-50px);
+			transform: translateY(50px);
 			text-align: center;
+
 		}
 
 		.content-z{
@@ -189,11 +199,17 @@
 div.p{
 	display: flex!important;
 	justify-content: center!important;
-	border :2px solid red;
 	color: red;
-	background-color: whitesmoke;
-	margin-top: 5%;
 	width: 30%;
+
+}
+
+div.pp{
+	display: flex!important;
+	justify-content: center!important;
+	color: red;
+	width: 45%;
+	margin-right: 8%;
 
 }
 
@@ -212,15 +228,13 @@ div.p{
 
 
 
-h1.titre{
+.titre{
 	display:flex;
 	justify-content: center;
-	transform: translateX(10%)!important;
-	background-color: whitesmoke;
-
-
-
-
+	color: blue!important;
+	text-shadow: 5px 5px black ;
+	transform: translateY(50px);
+	
 }
 
 h2{
@@ -340,9 +354,9 @@ h2{
 	justify-content: center!important;
 	background-repeat: no-repeat;
 	background-size: cover;
-	transform: translate(32%, -40%)!important;
+	transform: translate(30%, -40%)!important;
 	padding: 0 ;
-	height: 450px;
+	height: 650px;
 	width: 850px;
 
 }
@@ -483,11 +497,10 @@ h2{
 	
 	display: flex;
 	justify-content: center;
-	background:url('../img/wallpaper.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-size: 150px;
-	/*margin-left: 35%;*/
+	transform: translate(30%, -20%)!important;
 	height: 450px;
 	width: 850px;
 
@@ -532,12 +545,15 @@ h2{
 	display: flex;
 	justify-content: center;
 	text-align: center;
-	border: 2px solid black;
-	background-color: whitesmoke ;
+	border: 2px solid red;
+	color: blue!important;
+	text-shadow: 4px 4px black;
+	box-shadow: 10px 10px 10px red;
+	background-color: rgba(255,255,255,0.3)!important;
 	margin-left: 18%;
 	margin-top: 5%;
 	margin-bottom: 5%;
-	font-size: 40px;
+	font-size: 45px;
 	width: 65%;
 	
 
@@ -547,7 +563,7 @@ h2{
 	display:flex;
 	justify-content: center;
 	margin-left: 38.5%;
-	transform: translate(25%, 90%)!important;
+	transform: translate(25%, -25%)!important;
 	background-color: red;
 	color: whitesmoke;
 	font-size: 50px;
@@ -565,8 +581,10 @@ h2.border{
 	text-align: center;
 	border: 2px solid black;
 	background-color: whitesmoke ;
-	margin-top: 5%;	
+	margin-top: 5%!important;
+	margin-bottom: 5%;	
 	font-size: 40px;
+	/*position: absolute;*/
 }
 
 h3.border{

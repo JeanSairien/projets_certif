@@ -195,6 +195,17 @@
 			opacity: 0.6;
 		}
 
+		#section6{
+			background-color: rgba(0,0,0, 0.3);
+
+		}
+		#section6 h1{
+			color: #F2F2F2;
+		}
+		#section6 p{
+			opacity: 0.6;
+		}
+
 
 div.p{
 	display: flex!important;
@@ -287,6 +298,16 @@ h2{
 
 
 .equipe{
+	float:left;
+	display: flex!important;
+	justify-content: center!important;
+	height:250px;
+	width: 50%;
+	margin-left: 25%;
+	background-color: white;
+}
+
+.equipe1{
 	float:left;
 	display: flex!important;
 	justify-content: center!important;

@@ -31,7 +31,7 @@
 				</div>
 			</div>	
 			</center>
-					<p class="border">Une entreprise situé a Crac'h dans le 56</p>
+					<p class="border">Une entreprise située à Crac'h dans le 56</p>
 
 					<div class="logo">
 						<img src="img/2tech.jpg"/>					
@@ -83,8 +83,11 @@
 <!--slide 3-->		
 		<div class="slide" id="slide3">
 			<div class="content">
-				 <h2 class="border">10 utilisateurs simultané/10 000 produits maximum </h2>
-			 		<img src="img/bdd.png" class="add"/>
+				 	<h4 class="border">uml / mockup </h4>	
+						<div class="equipe">
+							<a href="docs/Spécifications/img/2techUml.png"><img src="docs/Spécifications/img/2techUml.png" class="uml"/></a>
+							<a href="docs/Spécifications/img/maquette.png"><img src="docs/Spécifications/img/maquette.png" class=" mockup"/></a>
+			</div>
 			</div>
 		</div>
 		
@@ -92,12 +95,9 @@
 		<div class="slide" id="slide4">
 			<div class="content">
 				 
+				 <h2 class="border">10 utilisateurs simultané/10 000 produits maximum </h2>
+			 		<img src="img/bdd.png" class="add"/>
 		 	 	 <h2 class="border">la conception </h2>
-				 	<h4 class="border">uml / mockup </h4>	
-						<div class="equipe">
-							<a href="docs/Spécifications/img/2techUml.png"><img src="docs/Spécifications/img/2techUml.png" class="uml"/></a>
-							<a href="docs/Spécifications/img/maquette.png"><img src="docs/Spécifications/img/maquette.png" class=" mockup"/></a>
-			</div>
 		</div>
 		</div>
 		
@@ -105,22 +105,25 @@
 		<div class="slide" id="slide5">
 			<div class="content">
 				 <h2 class="border">l'administration</h2>
-				 	
-						<img src="img/adduser.png" class="center area"/>
+				 	<div class="equipe">	
+				 		<img src="img/adduser.png" class="jo"/>
+				 		<img src="docs/Spécifications/img/add.png" class="ju"/>
+				 	</div>	
 			</div>
 		</div>
 <!--slide 6-->
 		<div class="slide" id="slide6">
 			<div class="content">
-				 <h2 class="border">Les accés</h2>
+				 <h2 class="border">Les accès</h2>
 				 <h4 class="border">Utilisateur/Administrateur</h4>	
 						
-							<img src="img/login.png" class="center place"/>
-
+							<a href="img/login.png"><img src="img/login.png" class="jo"/></a>
+							<a href="docs/Spécifications/img/login.png"><img src="docs/Spécifications/img/login.png" class="sql"></a>
+						</div>		
 						
 			</div>
 		</div>
-	</div>
+	
 
 
 <!--section 3-->
@@ -143,8 +146,8 @@
 <div class="section" id="section4">
 			<div class="slide" id="slide1">
 			 	<div class="content">
-					<h3 class="border">l'aspect téchnique</h3> 	 
-					<h4 class="border ">les téchnologies </h4>	
+					<h3 class="border">l'aspect technique</h3> 	 
+					<h4 class="border ">les technologies </h4>	
 						<img src="img/techno.jpg" >
 				</div>
 			</div><!--end slide 1-->
@@ -200,17 +203,49 @@
 
 <!--section 5-->
 <div class="section" id="section5">
-	<div class="content">
-				<h3 class="border">La conclusion</h3>
-		 	 		<h4 class="border ">avant / aprés</h4>	
-		 	 			<a href="img/oldnew.png" class="voir">Plein écran</a>
-	 			 		<img src="img/oldnew.png" class="content-z modifss"/>
-
+	<div class="slide" id="slide1">
+		<div class="content">
+				<h3 class="border">La gestion de contenue </h3>
+		 	 		<h4 class="border ">au sein du projet</h4>	
+		 	 			<div class="equipe1">
+							<a href="img/modaladd.png"><img src="img/modaladd.png"/></a>
+							<a href="img/supp.png"><img src="img/supp.png" class="sql" /></a>
+				
 						</div>
+		</div>
+	</div>
+	<div class="slide" id="slide2">
+		<div class="content">
+				<h3 class="border">La gestion de contenue </h3>
+		 	 		<h4 class="border ">Shambhalafm/Ebullition</h4>	
+		 	 			<div class="equipe">
+							<a href="img/adminpanel.png"><img src="img/adminpanel.png"/></a>
+							<a href="img/ebullition.png"><img src="img/ebullition.png" class="sql" /></a>
+				
+						</div>
+		</div>
+	</div>
+	</div>
 
+
+
+<div class="section" id="section6">
+	<div class="content">
+
+				<h3 class="border">La conclusion</h3>
+	 	 		<h4 class="border ">avant / après</h4>.
+	 	 		
+ 	 			<a href="img/oldnew.png" class="voir">Plein écran</a>
+		 		<img src="img/oldnew.png" class="content-z modifss"/>
+		 		
+	</div>
 </div>
 </div>
-</div><!--end fullpage div -->
+<!--end fullpage div -->
+
+
+
+
 
 
 
@@ -218,7 +253,7 @@
 <script type="text/javascript" src="javascript.fullPage.js"></script>
 <script type="text/javascript">
 	fullpage.initialize('#fullpage', {
-		anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage',  'lastPage'],
+		anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage','lastPage'],
 		menu: '#menu',
 		css3:true
 	});

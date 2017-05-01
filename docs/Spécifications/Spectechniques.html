@@ -207,8 +207,8 @@ table, tr, td{
 		<h3>3.2 <em> Sélectionner une publication</em> <span>Tec 1.2 voir Req 1.2</span></h3>
 				
 
-				<p>Lorsque <strong>l'utilisateur</strong>accede a la page du social wall, apres s'etre identifié</p>  
-				<div class="code"><code>&lt;input type="radio"&gt;</code></div> 
+				<p>Lorsque <strong>l'utilisateur</strong>accede a la page du social wall, apres s'etre identifié, les publications seront afficher grace a </p>  
+				
 				<p> la requete suivante:<div class="code1">"SelectArticle()"</div> </p>
 				<p>qui executera la commandes sql suivante :</p>
 				<div class="code">'SELECT * FROM members_posts ORDER BY day DESC'</div>
@@ -261,7 +261,7 @@ table, tr, td{
 
 				<p><strong>L'utilisateur</strong> aura la possibilité de modifier une publication dans la base de données en cliquant sur l'icône 
 				<!--CHANGER L'IMAGE -->	
-				<img src="img/pencil.png"> via le Menu contextuel,</p>
+				<img src="img/modif.png"> via le Menu contextuel,</p>
 
 
 				<p>La fonction</p><div class="code1">"Modifyarticle()"</div><p> est alors appelé</p> 
@@ -279,7 +279,7 @@ table, tr, td{
 
 			<h3>3.4 <em>Supprimer une publication Tec 1.4 voir Req 1.4</em></h3>
 
-				<p><strong>L'utilistateur</strong> aura la possibilité de supprimer un publication dans la base de données en cliquant sur l'icône <img src="img/cross.png"> via le menu contextuel.</p>
+				<p><strong>L'utilistateur</strong> aura la possibilité de supprimer un publication dans la base de données en cliquant sur l'icône <img src="img/supp.png"> via le menu contextuel.</p>
 
 				<p> La fonction <div class="code1">"DeleteArticle()"</div> déclanchera la fonction suivante: </p>	
 				<div class="code">"SelectArticle()"</div>
@@ -297,10 +297,10 @@ table, tr, td{
 
 				
 
-			<h3>4.4<em> Se connecter Tec 3.4 voir Req 3.4</em></h3>					
+			<h3>4.4<em> Se connecter Tec 2.1 voir Req 2.1</em></h3>					
 				<p><strong>L'utilisateur</strong> saisit les champs pour la connexion</p> 
-				<p> l'appel ajax suivant <div class="code1">"$http.get()"</div> déclanchera la fonction suivante: </p>
-				<div class="code">"login_user()"</div>
+				 la fonction suivante se déclanchera: </p>
+				<div class="code">"login()"</div>
 				<p>La commande SQL suivante sera alors executée:</p>
 				<div class="code2">"SELECT username FROM users WHERE username='$username' AND password='$password'"</div>
 				<p>puis pour modifier l'identifiant du token de connexion :</p>
@@ -308,19 +308,19 @@ table, tr, td{
 
 				<img class="add" src="img/login.png">
 
-			<h3>4.5<em> Reconnexion Tec 3.5 voir Req 3.4</em></h3>
+			<h3>4.5<em> Reconnexion Tec 2.2 voir Req 2.2</em></h3>
 			<p><strong>L'utilisateur</strong> pourra fermer la fenêtre sans se déconnecter puis la réouvrir et retrouver sa connection, si l'utilisateur ne s'est pas déconnecté alors :</p>
-			<p> l'appel ajax suivant <div class="code1">"$http.get()"</div> déclanchera la fonction suivante: </p>
+			<p>la fonction suivante déclanchera: </p>
 			<div class="code">"check_token()"</div>
 			<p>La commande SQL suivante sera alors executée:</p>
 			<div class="code2">"SELECT * FROM users WHERE token='$token'"</div>
 			<p> et vérifiera l'identifiant de connexion dans la base de données </p>
 			<img class="add" src="img/check_token.png">
 
-			<h3>4.6<em> Déconnexion Tec 3.6 voir Req 3.5</em></h3>
+			<h3>4.6<em> Déconnexion Tec 2.3 voir Req 2.3</em></h3>
 			<p><strong>L'utilisateur</strong> pourra se déconnecter en cliquant sur le bouton prévu à cet effet:</p>
-			<p> l'appel ajax suivant <div class="code1">"$http.get()"</div> déclanchera la fonction suivante: </p>
-			<div class="code">"logout_user()"</div>
+			déclanchera la fonction suivante: </p>
+			<div class="code">"logout()"</div>
 			<p>La commande SQL suivante sera alors executée:</p>
 			<div class="code2">"UPDATE users SET token='LOGGED OUT' WHERE token=$token"</div>
 			<p>Pour réinitialiser la valeur du token à "logged out" </p>

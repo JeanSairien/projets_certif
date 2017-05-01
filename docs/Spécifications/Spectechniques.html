@@ -80,8 +80,7 @@ table, tr, td{
 		<h1> Spécifications techniques</h1>
 
 		<h2>1. Contexte </h2>
-
-			<p>L'application est développée avec angular js  qui est un framework MVC / MVVM côté client, développée en Javascript pour sa partie Front-End,  PHP 7 qui est un language coté serveur pour sa partie Back-End et enfin avec une base de donnée type MySQL.</p>
+			<p>Le site web est developper from scratch en php 7 coté serveur, avec bootstrap et jquery coté client </p>
 
 		<hr>
 
@@ -107,96 +106,61 @@ table, tr, td{
 			    <tbody>
 			      <tr>
 			        <td> 1.1</td>
-			        <td>Ajouter un article</td>
+			        <td>Ajouter une publication </td>
 			        <td> 1.1</td>
 			      </tr>
 			      <tr>
 			        <td>1.2</td>
-			        <td>Sélectionner un article</td>
+			        <td>Sélectionner une publication</td>
 			        <td>1.2</td>
 			      </tr>
 			      <tr>
 			        <td>1.3</td>
-			        <td>Modifier un article</td>
+			        <td>Modifier une publication</td>
 			        <td>1.3</td>
 			      </tr>
 			       <tr>
 			        <td>1.4</td>
-			        <td>Supprimer un article</td>
+			        <td>Supprimer une publication</td>
 			        <td>1.4</td>
 			      </tr>
 			      <tr>
 			        <td>2.1</td>
-			        <td>Ajouter un fournisseur</td>
+			        <td>Se connecter</td>
 			        <td>2.1</td>
 			      </tr>
 			      <tr>
 			        <td>2.2</td>
-			        <td>Sélectionner un fournisseur</td>
+			        <td>Se reconnecter</td>
 			        <td>2.2</td>
 			      </tr>
 			      <tr>
 			        <td>2.3</td>
-			        <td>Modifier un fournisseur</td>
+			        <td>Se deconnecter</td>
 			        <td>2.3</td>
 			      </tr>
-			      <tr>
-			        <td>2.4</td>
-			        <td>Supprimer un fournisseur</td>
-			        <td>2.4</td>
-			      </tr>
-			      <tr>
-			        <td>3.1</td>
-			        <td>Ajouter un utilisateur</td>
-			        <td>3.1</td>
-			      </tr>
-			      <tr>
-			        <td>3.2</td>
-			        <td>Modifier un utilisateur</td>
-			        <td>3.2</td>
-			      </tr>
-			      <tr>
-			        <td>3.3</td>
-			        <td>Supprimer un utilisateur</td>
-			        <td>3.3</td>
-			      </tr>
-			      <tr>
-			        <td>3.4</td>
-			        <td>Se connecter</td>
-			        <td>3.4</td>
-			      </tr>
-			      <tr>
-			        <td>3.4</td>
-			        <td>Se reconnecter</td>
-			        <td>3.5</td>
-			      </tr>
-			      <tr>
-			        <td>3.5</td>
-			        <td>Se deconnecter</td>
-			        <td>3.6</td>
-			      </tr>
-
+			      
 
 			    </tbody>
 			  </table>
 			</center>
 
 			<div class="logo size">
-				<p>Les sections au format HTML sont appelées dans une directive définie par le paramètre "templateUrl" . L’intérêt de cette technique est que le fichier HTML va être mis en cache par le navigateur.</p>
+				<p>Les sections au format HTML sont appelées dans des inclusions en php, chaques parties du site se trouve dans une inclusions ou un fichier unique tel que les fichiers suivant: login.php, register.php, logout.php, les fonctionnalitées sont rangées par classes .</p>
 				
 			</div>
 		<hr>
 
 		<h2>3. Fonctions de service</h2> 
 
-			<h3>3.1 <em> Ajouter un article</em> <span>Tec 1.1 voir Req 1.1</span></h3>
+			<h3>3.1 <em> Ajouter une publication</em> <span>Tec 1.1 voir Req 1.1</span></h3>
 
-			<p>La fonctionnalité d'ajout s'effectue via un CRUD implementé pour le projet, par la fonction <div class="code1">add_article()"</div> qui est déclanché par l'appel ajax suivant <div class="code1">"$http.post()"</div> </p>
+			<p>La fonctionnalité d'ajout s'effectue via un CRUD implementé pour le projet, par la fonction <div class="code1">addArticle()"</div> qui est appellé par la classe <div class="code1">"Auth.php"</div> </p>
 			<p>Une fois la fonction déclanchée, la commande SQL suivante est alors exécutée :</p>
-			<div class="code2">"INSERT INTO article (articles, description, reference, fournisseurs, date, stock) VALUES ('".$articles."', '".$description."', '".$reference."', '".$fournisseurs."', '".$date."', '".$stock."' )"</div>				
+			<div class="code2">"INSERT INTO members_posts ($category=?, $title=?, $description, $content=?, $day=?) WHERE user_id='.user_id,[$user_id])->fetch();"</div>				
 			<p> Le contenu est alors ajouté dans la base de données en reçevant un ID généré automatiquement, qui est de type <em>"integer"</em>.</p>
 			  
-			<p> Les champs contenus dans la table <strong>article</strong> peuvent être remplit dans la base de données tel que : </p>
+			<p> Les champs contenus dans la table <strong>members_post</strong> peuvent être remplit dans la base de données tel que : </p>
 
 				<table class="table-bordered">
 			    <thead>
@@ -208,50 +172,45 @@ table, tr, td{
 			    </thead>
 			    <tbody>
 			      <tr>
-			        <td>"Articles"</td>
+			        <td>"Category"</td>
 			        <td>varchar(255)</td>
-			        <td>Le champ définit le nom de l'article et est obligatoire</td>
+			        <td>Le champ définit le nom de la categorie et est obligatoire</td>
+			      </tr>
+			      <tr>
+			        <td>"Title"</td>
+			        <td>varchar(255)</td>
+			        <td>Permet d'entrer un titre de la publication</td>
 			      </tr>
 			      <tr>
 			        <td>"Description"</td>
 			        <td>varchar(255)</td>
-			        <td>Permet d'entrer une description de l'article</td>
-			      </tr>
-			      <tr>
-			        <td>"Référence"</td>
-			        <td>varchar(255)</td>
-			        <td>La référence du produit doit être saisie pour être ajoutée à la base de données</td>
+			        <td>La description de la publication doit être saisie pour être ajoutée à la base de données</td>
 			      </tr>
 			       <tr>
-			        <td>"Fournisseurs"</td>
+			        <td>"Content"</td>
 			        <td>varchar(255)</td>
-			        <td> Permet d'entrer le nom du fournisseur pour indiquer la provenance de l'article</td>
+			        <td> Permet d'entrer le contenu de la publication, la saisie du contenu doit etre rediger pour etre ajouté a la base de données. </td>
 			      </tr>
 			      <tr>
-			        <td>"Date"</td>
+			        <td>"Day"</td>
 			        <td>datetime</td>
-			        <td>Permet de spécifier la date d'entrée via un datepicker (calendrier jquery)</td>
+			        <td>la fonction datetime() en php est utiliser pour calculer la date de la publication</td>
 			      </tr>
-			      <tr>
-			        <td>"Stock"</td>
-			        <td>varchar(255)</td>
-			        <td>Permet de spécifier une quantité à l'article en entrée, ce champs doit obligatoirement être saisi</td>
-			      </tr>
+			      
 			    </tbody>
 			  </table>
 
 
 			
 
-		<h3>3.2 <em> Sélectionner un article</em> <span>Tec 1.2 voir Req 1.2</span></h3>
+		<h3>3.2 <em> Sélectionner une publication</em> <span>Tec 1.2 voir Req 1.2</span></h3>
 				
 
-				<p>Lorsque <strong>l'utilisateur</strong> effectue une recherche via le champs prévu à cet effet,</p>  
+				<p>Lorsque <strong>l'utilisateur</strong>accede a la page du social wall, apres s'etre identifié</p>  
 				<div class="code"><code>&lt;input type="radio"&gt;</code></div> 
-				<p> l'appel ajax suivant:<div class="code1">"$http.get()"</div> est alors effectué pour appeler la fonction </p>
-				<div class="code1">"get_articles()"</div> 
+				<p> la requete suivante:<div class="code1">"SelectArticle()"</div> </p>
 				<p>qui executera la commandes sql suivante :</p>
-				<div class="code">'SELECT * FROM article'</div>
+				<div class="code">'SELECT * FROM members_posts ORDER BY day DESC'</div>
 				
 				<p>qui selectionne les champs correspondants dans la base de données :</p>
 
@@ -267,35 +226,31 @@ table, tr, td{
 			    </thead>
 			    <tbody>
 			      <tr>
-			        <td>"Articles"</td>
+			        <td>"Category"</td>
 			        <td>varchar(255)</td>
-			        <td>Le champ définit le nom de l'article et est obligatoire</td>
+			        <td>Le champ définit le nom de la categorie et est obligatoire</td>
+			      </tr>
+			      <tr>
+			        <td>"Title"</td>
+			        <td>varchar(255)</td>
+			        <td>Permet d'entrer un titre de la publication</td>
 			      </tr>
 			      <tr>
 			        <td>"Description"</td>
 			        <td>varchar(255)</td>
-			        <td>Permet d'entrer une description de l'article</td>
-			      </tr>
-			      <tr>
-			        <td>"Référence"</td>
-			        <td>varchar(255)</td>
-			        <td>La référence du produit doit être saisie pour être ajoutée à la base de données</td>
+			        <td>La description de la publication doit être saisie pour être ajoutée à la base de données</td>
 			      </tr>
 			       <tr>
-			        <td>"Fournisseurs"</td>
+			        <td>"Content"</td>
 			        <td>varchar(255)</td>
-			        <td> Permet d'entrer le nom du fournisseur pour indiquer la provenance de l'article</td>
+			        <td> Permet d'entrer le contenu de la publication, la saisie du contenu doit etre rediger pour etre ajouté a la base de données. </td>
 			      </tr>
 			      <tr>
-			        <td>"Date"</td>
+			        <td>"Day"</td>
 			        <td>datetime</td>
-			        <td>Permet de spécifier la date d'entrée via un datepicker (calendrier jquery)</td>
+			        <td>la fonction datetime() en php est utiliser pour calculer la date de la publication</td>
 			      </tr>
-			      <tr>
-			        <td>"Stock"</td>
-			        <td>varchar(255)</td>
-			        <td>Permet de spécifier une quantité à l'article en entrée, ce champs doit obligatoirement être saisi</td>
-			      </tr>
+			      
 			    </tbody>
 			  </table>
 			
@@ -303,7 +258,9 @@ table, tr, td{
 
 		<h3>3.3 <em> Modifier un article tec 1.3 voir req 1.3</em></h3>
 
-				<p><strong>L'utilisateur</strong> aura la possibilité de modifier un article dans la base de données en cliquant sur l'icône <img src="img/pencil.png"> via le tableau,</p>
+				<p><strong>L'utilisateur</strong> aura la possibilité de modifier une publication dans la base de données en cliquant sur l'icône 
+				<!--CHANGER L'IMAGE -->	
+				<img src="img/pencil.png"> via le Menu contextuel,</p>
 
 
 				<p>l'appel ajax </p><div class="code1">"$http.post()"</div><p> est alors effectué pour appeler la fonction</p> 
